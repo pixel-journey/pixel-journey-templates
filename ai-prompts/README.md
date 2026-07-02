@@ -21,7 +21,8 @@ ai-prompts/
 │   ├── educational-support.md
 │   ├── px-fundamentals.md
 │   ├── hot-or-not.md
-│   └── cross-chain.md
+│   ├── cross-chain.md
+│   └── development-workflow.md
 └── README.md
 ```
 
@@ -60,6 +61,7 @@ ai-prompts/
 - `knowledge-banks/px-fundamentals.md` — Broad Px fundamentals and principles
 - `knowledge-banks/hot-or-not.md` — Hot or Not / verifiable mechanics
 - `knowledge-banks/cross-chain.md` — Cross-chain key derivation and multi-chain work
+- `knowledge-banks/development-workflow.md` — General Px development workflow and best practices
 
 ## Contributing New Templates
 
