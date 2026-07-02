@@ -18,7 +18,8 @@ ai-prompts/
 │   ├── example.md
 │   ├── wallet-security.md
 │   ├── design-system.md
-│   └── educational-support.md
+│   ├── educational-support.md
+│   └── px-fundamentals.md
 └── README.md
 ```
 
@@ -53,6 +54,7 @@ ai-prompts/
 - `knowledge-banks/wallet-security.md` — Wallet security & self-custody
 - `knowledge-banks/design-system.md` — Design system integration & pixel UI
 - `knowledge-banks/educational-support.md` — Educational support & onboarding
+- `knowledge-banks/px-fundamentals.md` — Broad Px fundamentals and principles
 
 ## Contributing New Templates
 
