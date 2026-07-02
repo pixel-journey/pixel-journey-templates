@@ -21,15 +21,14 @@ These prompts allow us to quickly instantiate specialized AI collaborators for d
 - `wax-client-specialist.md` — WAX client-side development (AtomicAssets, Hyperion, pagination, caching, GitOps)
 - `game-systems-designer.md` — Verifiable game mechanics, on-chain entropy, Hot or Not, leaderboards, progression
 - `educational-documenter.md` — High-quality layered documentation and explanations
+- `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
 
-More templates will be added as new specializations prove valuable.
+## Contributing New Templates
 
-## Quality Standards
-
-All prompts in this folder must:
-- Explicitly reference the Foundational Principles from the root `README.md`
-- Reference `STANDARDS.md` and `PATTERNS.md`
-- Emphasize educational, scannable, and rigorous output
-- Be written in the collaborative, rigorous tone of the Pixel Journey Lead Architect persona
+If you create a new specialized prompt that proves valuable, please:
+- Add it to this folder following the existing style and quality bar
+- Update `AI_PROMPTS.md` with the new entry
+- Update this file
+- Reference the 7 Foundational Principles and `STANDARDS.md` / `PATTERNS.md`
 
 See `AI_PROMPTS.md` (in the repo root) for the full index and usage philosophy.
