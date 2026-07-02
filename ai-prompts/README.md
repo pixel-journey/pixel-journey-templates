@@ -20,7 +20,8 @@ ai-prompts/
 │   ├── design-system.md
 │   ├── educational-support.md
 │   ├── px-fundamentals.md
-│   └── hot-or-not.md
+│   ├── hot-or-not.md
+│   └── cross-chain.md
 └── README.md
 ```
 
@@ -57,6 +58,7 @@ ai-prompts/
 - `knowledge-banks/educational-support.md` — Educational support & onboarding
 - `knowledge-banks/px-fundamentals.md` — Broad Px fundamentals and principles
 - `knowledge-banks/hot-or-not.md` — Hot or Not / verifiable mechanics
+- `knowledge-banks/cross-chain.md` — Cross-chain key derivation and multi-chain work
 
 ## Contributing New Templates
 
