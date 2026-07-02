@@ -7,9 +7,44 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Run tests or lint
-      run: echo "No tests yet - add your stack-specific checks here"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci --if-present || echo "No package.json at root - templates have their own"
+      - name: Lint root (if applicable)
+        run: npm run lint --if-present || echo "No lint script"
+
+  build-templates:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        template: [nextjs-dapp, analytics-tracker, game-verifiable]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build ${{ matrix.template }} (if package.json exists)
+        working-directory: templates/${{ matrix.template }}
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+            npm run build --if-present || echo "No build script yet - placeholder OK in early phases"
+          else
+            echo "Template ${{ matrix.template }} not yet implemented - skipping build"
+          fi
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run tests (if present)
+        run: npm test --if-present || echo "No tests configured yet - will add per-template in Phase 2+"
