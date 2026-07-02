@@ -77,6 +77,24 @@ This document provides overviews of the patterns we use repeatedly across Px pro
 - Cards, modals, leaderboards, and data displays follow consistent spacing, borders, and elevation language
 - Every UI element has clear hover/active/focus states
 
+**Example: Using Design System Tokens**
+
+```tsx
+import { tokens } from '@pxjourney/design-system';
+
+const Card = () => (
+  <div 
+    className="glassmorphic p-6 rounded-xl"
+    style={{ 
+      backgroundColor: tokens.colors.background.glass,
+      borderColor: tokens.colors.border.subtle 
+    }}
+  >
+    {/* Content */}
+  </div>
+);
+```
+
 ---
 
 ## 5. Leaderboard, Ranking & XP Systems
