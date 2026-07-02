@@ -4,6 +4,8 @@
 
 This document defines the non-negotiable rules and expected shapes for all work in the Pixel Journey organization. Every contribution and project should follow these standards.
 
+See `EDUCATIONAL-QUALITY-STANDARD.md` for the broader quality expectations around educational output and documentation.
+
 ---
 
 ## The 7 Foundational Principles
@@ -53,7 +55,7 @@ When working with AI agents:
 
 - Use the specialized prompt templates from `ai-prompts/`
 - Pair personas with relevant knowledge banks when available
-- Expect outputs to follow the educational and structural standards in this handbook
+- Expect outputs to follow the educational and structural standards in this handbook and `EDUCATIONAL-QUALITY-STANDARD.md`
 - Review AI-generated work against the 7 Foundational Principles
 
 These standards will evolve as the ecosystem grows. Major changes should be discussed and documented here.
