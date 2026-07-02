@@ -4,6 +4,8 @@
 
 This document defines what high-quality, reference-grade educational output looks like across the Pixel Journey ecosystem. It combines our internal principles with lessons from high-quality blueprint work (such as the WAX ecosystem blueprint catalog).
 
+See `PATTERNS.md` for reusable implementation patterns and `AI_PROMPTS.md` + `knowledge-banks/` for AI collaboration tools.
+
 ## Core Philosophy
 
 Every piece of work we produce — whether code, documentation, patterns, or AI prompts — should feel like a **premium educational product**. It should be something a serious developer would be happy to learn from, copy patterns from, and build upon.
