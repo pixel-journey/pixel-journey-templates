@@ -4,6 +4,8 @@
 
 This document provides overviews of the patterns we use repeatedly across Px projects. Focus is on **requirements + key decisions + best expected usage** so that new work stays consistent and high-quality.
 
+See also `EDUCATIONAL-QUALITY-STANDARD.md` for the broader quality bar on documentation and educational output.
+
 ---
 
 ## 1. WharfKit Session & Authentication
@@ -39,6 +41,8 @@ This document provides overviews of the patterns we use repeatedly across Px pro
 - Small pure utility function: `deriveEntropy(txId, recentBlockHeader) => seed`
 - Use seed for pairing, loot, matchups, or procedural generation in Hot or Not, mini-games, etc.
 - Surface the seed and source TX in the interface ("Verifiable via TX ...")
+
+See `knowledge-banks/hot-or-not.md` and `knowledge-banks/example.md` for related context.
 
 ---
 
@@ -95,6 +99,8 @@ const Card = () => (
 );
 ```
 
+See `knowledge-banks/design-system.md` for additional context.
+
 ---
 
 ## 5. Leaderboard, Ranking & XP Systems
@@ -132,6 +138,8 @@ const Card = () => (
 - Leaderboards combine surviving rank + weighted score concepts where applicable
 - All mechanics remain auditable via transaction history
 
+See `knowledge-banks/hot-or-not.md` for related context.
+
 ---
 
 ## 7. Cross-Chain Key Derivation & Vault Patterns
@@ -149,6 +157,8 @@ const Card = () => (
 - Derivation happens client-side with strong encryption at rest
 - Users see clear "Derived addresses" views without ever seeing seed material
 - Auto-sign is always opt-in with explicit scope
+
+See `knowledge-banks/cross-chain.md` and `knowledge-banks/wallet-security.md` for related context.
 
 ---
 
@@ -189,3 +199,5 @@ const Card = () => (
 - Document how to add a new language
 
 These patterns will continue to evolve as we extract more reusable approaches from active development in PxWallet, Hot or Not, PxPackages, and community work.
+
+See `EDUCATIONAL-QUALITY-STANDARD.md` for the broader quality expectations around documentation and educational output.
