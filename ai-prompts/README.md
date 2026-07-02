@@ -19,7 +19,8 @@ ai-prompts/
 │   ├── wallet-security.md
 │   ├── design-system.md
 │   ├── educational-support.md
-│   └── px-fundamentals.md
+│   ├── px-fundamentals.md
+│   └── hot-or-not.md
 └── README.md
 ```
 
@@ -55,6 +56,7 @@ ai-prompts/
 - `knowledge-banks/design-system.md` — Design system integration & pixel UI
 - `knowledge-banks/educational-support.md` — Educational support & onboarding
 - `knowledge-banks/px-fundamentals.md` — Broad Px fundamentals and principles
+- `knowledge-banks/hot-or-not.md` — Hot or Not / verifiable mechanics
 
 ## Contributing New Templates
 
