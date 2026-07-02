@@ -45,6 +45,7 @@ ai-prompts/
 - `design-system-integrator.md`
 - `educational-documenter.md`
 - `critical-feedback-tester.md`
+- `technical-writer.md`
 
 ### Content, Community & Education
 - `marketing-content-creator.md`
