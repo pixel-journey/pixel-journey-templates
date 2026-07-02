@@ -9,6 +9,7 @@ This folder contains deeper, focused guides on important technical and architect
 - `GETTING_STARTED.md` — Practical onboarding guide for new humans and AI agents (recommended starting point).
 - `WAX_CLIENT_SIDE_PATTERNS.md` — How we build reliable experiences using only public WAX infrastructure.
 - `ONCHAIN_ENTROPY_GUIDE.md` — The verifiable randomness pattern that powers fair, trustless game mechanics.
+- `PXWALLET_ARCHITECTURE_OVERVIEW.md` — High-level architecture of the god-mode self-custody wallet.
 
 ## Purpose
 
