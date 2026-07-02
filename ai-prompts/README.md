@@ -6,7 +6,7 @@ This folder contains high-quality, reusable system prompt templates designed to 
 
 ## Purpose
 
-These prompts allow us to quickly instantiate specialized AI collaborators across multiple domains: development, architecture, design, documentation, feedback/testing, content/marketing, and more.
+These prompts allow us to quickly instantiate specialized AI collaborators across multiple domains: development, architecture, design, documentation, feedback/testing, content/marketing, education, and more.
 
 ## How to Use
 
@@ -29,12 +29,13 @@ These prompts allow us to quickly instantiate specialized AI collaborators acros
 - `educational-documenter.md`
 - `critical-feedback-tester.md`
 
-### Content & Community
+### Content, Community & Education
 - `marketing-content-creator.md`
+- `educational-support-bot.md`
 
 ## Contributing New Templates
 
-We welcome expansion into new domains (educational support bots, knowledge-bank templates, etc.). When adding one:
+We welcome expansion into new domains (knowledge-bank templates, etc.). When adding one:
 - Follow the existing style and quality bar
 - Update `AI_PROMPTS.md` and this file
 - Reference the 7 Foundational Principles and relevant handbook sections
