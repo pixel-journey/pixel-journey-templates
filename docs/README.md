@@ -10,6 +10,7 @@ This folder contains deeper, focused guides on important technical and architect
 - `WAX_CLIENT_SIDE_PATTERNS.md` — How we build reliable experiences using only public WAX infrastructure.
 - `ONCHAIN_ENTROPY_GUIDE.md` — The verifiable randomness pattern that powers fair, trustless game mechanics.
 - `PXWALLET_ARCHITECTURE_OVERVIEW.md` — High-level architecture of the god-mode self-custody wallet.
+- `FAQ.md` — Frequently asked questions about the handbook and development process.
 
 ## Purpose
 
