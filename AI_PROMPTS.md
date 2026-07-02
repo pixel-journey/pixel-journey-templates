@@ -2,13 +2,13 @@
 
 **Specialized Prompt Templates for AI-Assisted Pixel Journey Development**
 
-This document introduces reusable, high-quality prompt templates for creating specialized AI agents focused on different domains of Px, WAX, and Web3 development.
+This document introduces reusable, high-quality prompt templates for creating specialized AI agents focused on different domains of Px, WAX, and Web3 development — including development, design, documentation, feedback, and more.
 
 These templates help us (and future contributors) spin up consistent, aligned AI collaborators quickly.
 
 ## Philosophy
 
-Pixel Journey development benefits enormously from specialized AI agents that deeply understand our principles, patterns, codebase style, and educational standards. Rather than using generic models for every task, we maintain a library of focused prompt templates.
+Pixel Journey development benefits enormously from specialized AI agents that deeply understand our principles, patterns, codebase style, and educational standards. Rather than using generic models for every task, we maintain a library of focused prompt templates across multiple skill domains.
 
 ## Quick Start
 
@@ -24,15 +24,14 @@ Pixel Journey development benefits enormously from specialized AI agents that de
 You can (and often should) combine multiple prompt templates for complex tasks. Here are some effective combinations:
 
 - **Core Architect + Game Systems Designer** — Planning a new Hot or Not feature or mini-game.
-- **Core Architect + Wallet Security Engineer** — Designing new PxWallet features (vault, derivation, signing flows).
+- **Core Architect + Wallet Security Engineer** — Designing new PxWallet features.
 - **WAX Client-Specialist + Educational Documenter** — Building a data-heavy feature and documenting it well.
 - **Design System Integrator + Educational Documenter** — Creating new UI components with excellent documentation.
-- **PxPackages Specialist + Core Architect** — Planning how to extract logic into shared packages.
-
-Start with the broadest prompt (usually `px-core-architect.md`) and then layer in domain-specific ones.
+- **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback on work in progress.
 
 ## Available Specializations
 
+### Development & Architecture
 | Prompt File                        | Focus Area                                          | Recommended Use Cases                              |
 |------------------------------------|-----------------------------------------------------|----------------------------------------------------|
 | `px-core-architect.md`             | Overall Px architecture, principles, patterns, roadmap | High-level planning, major refactors, new features |
@@ -40,10 +39,15 @@ Start with the broadest prompt (usually `px-core-architect.md`) and then layer i
 | `game-systems-designer.md`         | Verifiable mechanics, on-chain entropy, Hot or Not, leaderboards, XP | Game features, randomness, progression systems     |
 | `wallet-security-engineer.md`      | Encrypted vaults, key derivation, signing UX, self-custody | PxWallet features, cross-chain, security patterns  |
 | `pxpackages-specialist.md`         | Monorepo structure, shared packages (@pxjourney/*), reusability | PxPackages development, extracting shared logic    |
-| `educational-documenter.md`        | High-quality layered documentation                  | READMEs, guides, pattern documentation, onboarding |
-| `design-system-integrator.md`      | Glassmorphic + pixel UI, design tokens, theming     | Frontend components, visual consistency            |
 
-New specializations can be added as the ecosystem grows.
+### Design, Documentation & Feedback
+| Prompt File                        | Focus Area                                          | Recommended Use Cases                              |
+|------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+| `design-system-integrator.md`      | Glassmorphic + pixel UI, design tokens, theming     | Frontend components, visual consistency            |
+| `educational-documenter.md`        | High-quality layered documentation                  | READMEs, guides, pattern documentation, onboarding |
+| `critical-feedback-tester.md`      | Rigorous qualitative feedback and testing           | Code reviews, UI/UX feedback, documentation review |
+
+New specializations can be added as the ecosystem grows (marketing/content personas, educational support bots, knowledge-bank templates, etc.).
 
 ## Quality Bar for New Prompts
 
