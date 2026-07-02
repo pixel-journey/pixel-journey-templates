@@ -16,8 +16,20 @@ Pixel Journey development benefits enormously from specialized AI agents that de
 2. Open the `.md` file for the specialization you need.
 3. Copy the entire content.
 4. Paste it as the system prompt (or initial context) in your AI tool (Grok, Claude, Cursor, etc.).
-5. Optionally add current project-specific context on top (e.g. "We're currently working on the encrypted vault feature in PxWallet").
+5. Optionally add current project-specific context on top.
 6. The agent will now operate with deep alignment to Px standards and patterns.
+
+## How to Combine Prompts
+
+You can (and often should) combine multiple prompt templates for complex tasks. Here are some effective combinations:
+
+- **Core Architect + Game Systems Designer** — Planning a new Hot or Not feature or mini-game.
+- **Core Architect + Wallet Security Engineer** — Designing new PxWallet features (vault, derivation, signing flows).
+- **WAX Client-Specialist + Educational Documenter** — Building a data-heavy feature and documenting it well.
+- **Design System Integrator + Educational Documenter** — Creating new UI components with excellent documentation.
+- **PxPackages Specialist + Core Architect** — Planning how to extract logic into shared packages.
+
+Start with the broadest prompt (usually `px-core-architect.md`) and then layer in domain-specific ones.
 
 ## Available Specializations
 
