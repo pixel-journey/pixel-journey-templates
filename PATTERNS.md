@@ -38,7 +38,7 @@ This document provides overviews of the patterns we use repeatedly across Px pro
 **Best Expected Usage**:
 - Small pure utility function: `deriveEntropy(txId, recentBlockHeader) => seed`
 - Use seed for pairing, loot, matchups, or procedural generation in Hot or Not, mini-games, etc.
-- Surface the seed and source TX in the interface ("Verifiable via TX 0x...")
+- Surface the seed and source TX in the interface ("Verifiable via TX ...")
 
 ---
 
@@ -57,7 +57,6 @@ This document provides overviews of the patterns we use repeatedly across Px pro
 - Centralize query logic in typed hooks or query factories
 - Show skeleton states that match final card/table layout
 - Client-side filtering and sorting on already-fetched data when possible
-- Trait exposure and rarity calculations happen client-side on survivors only
 
 ---
 
@@ -73,7 +72,7 @@ This document provides overviews of the patterns we use repeatedly across Px pro
 - Maintain excellent accessibility (contrast, keyboard navigation, reduced motion support)
 
 **Best Expected Usage**:
-- Start new screens or major components from approved shell patterns
+- Start new screens or major component from approved shell patterns
 - Theme switching is instant and persisted
 - Cards, modals, leaderboards, and data displays follow consistent spacing, borders, and elevation language
 - Every UI element has clear hover/active/focus states
@@ -132,5 +131,43 @@ This document provides overviews of the patterns we use repeatedly across Px pro
 - Derivation happens client-side with strong encryption at rest
 - Users see clear "Derived addresses" views without ever seeing seed material
 - Auto-sign is always opt-in with explicit scope
+
+---
+
+## 8. Modal, Drilldown & Overlay Patterns
+
+**Purpose**: Consistent, accessible way to show detailed views (asset details, transaction confirmations, settings, etc.) without losing context.
+
+**Key Requirements**:
+- Use Radix UI primitives + Framer Motion for smooth animations
+- Maintain focus management and keyboard accessibility
+- Support deep linking where appropriate (via URL params or state)
+- Clear close / escape behavior with proper cleanup
+- Loading and error states inside the modal when data is being fetched
+
+**Best Expected Usage**:
+- Create reusable `Modal` and `Drilldown` components that follow the Design System
+- Use Zustand or URL state to control open/closed + active item
+- Keep modals focused — avoid putting too much functionality in one overlay
+- Ensure mobile experience is excellent (bottom sheet style on small screens)
+
+---
+
+## 9. i18n and Localization Pattern
+
+**Purpose**: Support multiple languages cleanly while keeping the codebase maintainable.
+
+**Key Requirements**:
+- Use a modern library (next-intl, i18next, or equivalent) with TypeScript support
+- Store translations in a structured way (JSON or MDX)
+- Make all user-facing strings translatable
+- Support right-to-left languages where relevant in the future
+- Keep locale switching fast and persisted
+
+**Best Expected Usage**:
+- Centralize translation keys and avoid hard-coded strings in components
+- Use the Design System for any locale-aware formatting (dates, numbers, currency)
+- Test with multiple languages early, especially for layout impact
+- Document how to add a new language
 
 These patterns will continue to evolve as we extract more reusable approaches from active development in PxWallet, Hot or Not, PxPackages, and community work.
