@@ -1,45 +1,39 @@
 # ECOSYSTEM.md
 
-**Pixel Journey Organization Ecosystem Overview**
+**Pixel Journey Ecosystem Overview**
 
-This document maps the major repositories and projects in the Pixel Journey GitHub Organization and how they relate to each other.
+This document provides a high-level map of the major repositories and how they relate to each other within the Pixel Journey organization.
 
-## Core Repositories
+## Core Repos
 
-| Repo                              | Purpose                                                                 | Maturity | Key Patterns / Focus Areas                     |
-|-----------------------------------|-------------------------------------------------------------------------|----------|------------------------------------------------|
-| `pixel-journey` (org)             | Organization root & high-level coordination                             | Active   | Governance, visibility                         |
-| `pixel-journey-templates` (this)  | Standards, patterns, and ecosystem handbook                             | Active   | This repo — instructions & target state        |
-| `pixel-journey-design-system`     | Visual language, tokens, components, theming                            | Active   | Glassmorphic + pixel aesthetic, Figma sync     |
-| `pixel-journey-standards`         | Foundational engineering rules and Web3 best practices                  | Active   | Coding standards, security, contribution rules |
-| `PxWallet`                        | God-mode self-custody wallet (vault, cross-chain, Chrome ext, PWA)      | In Progress | Encrypted vault, key derivation, auto-sign, DeFi |
-| `PxHotOrNot` / Hot or Not         | Verifiable voting arena with PXJ mechanics, leaderboards, XP            | Alpha    | On-chain entropy, verifiable pairing, rewards  |
-| `PxPackages`                      | Monorepo for published `@pxjourney/*` packages                          | Planned  | Unified wiring, shared utils, SDK hooks        |
-| `docs.pixeljourney.xyz` / GitBook | Knowledge bank, WAX/EVM guides, ecosystem documentation                 | Active   | Educational content, navigation, onboarding    |
+| Repo | Purpose | Relationship to This Handbook |
+|------|---------|-------------------------------|
+| `pixel-journey-templates` (this repo) | Central standards, patterns, educational guides, and AI collaboration tools | Single source of truth for how we build |
+| `pixel-journey-design-system` | Visual language, design tokens, components, and style guide | Referenced heavily in UI-related patterns and the `design-system-integrator.md` prompt |
+| `pixel-journey-standards` | Foundational engineering rules and Web3 best practices | Builds on top with Px-specific enforcement and patterns |
+| `wax-ecosystem-blueprint-catalog` | Planning and indexing catalog for individual WAX public infrastructure blueprint repositories | Shares strong alignment on educational quality; we have cross-referenced standards |
 
-## Supporting & Community Repos
+## Major Project Repos (Examples)
 
-- Collection-specific tools and trackers (e.g. Pixal PFP analytics, trait exposure)
-- Meme coin tooling around YEET (airdrops, staking, PFPs, burns)
-- Mini-game experiments and visualizers
-- Community contribution repos
+- **PxWallet** — God-mode self-custody wallet with cross-chain derivation
+- **Hot or Not (Px Hot or Not)** — Verifiable voting/pairing with leaderboards and progression
+- **PxPackages** — Monorepo of reusable shared packages under `@pxjourney/*`
+- Individual blueprint repos (under the catalog) — Focused, high-quality examples of public WAX infrastructure usage
 
-All of these are expected to align with the standards and patterns documented in this handbook.
+## How This Handbook Fits In
 
-## How the Pieces Fit Together
+This `pixel-journey-templates` repo acts as the **central reference layer**:
+- It defines the standards and patterns that all other repos should follow
+- It provides reusable AI personas and knowledge banks to accelerate development
+- It maintains the educational quality bar across the ecosystem
 
-- **Design System** provides the visual foundation.
-- **Standards + this Templates/Handbook repo** provide the architectural and documentation rules.
-- **PxWallet** and **Hot or Not** are flagship consumer experiences that stress-test the patterns.
-- **PxPackages** will extract the best reusable pieces into published, versioned packages.
-- **Docs** captures the educational output and makes the ecosystem approachable.
+Individual project repos and blueprint repos are expected to align with the patterns and quality standards defined here, while contributing new reusable patterns back when discovered.
 
 ## Contribution Flow
 
-1. New idea or feature → Check this handbook (Patterns + Standards)
-2. Align with Design System
-3. Implement in the appropriate repo (or propose new one)
-4. Document decisions back into this handbook if the pattern is reusable
-5. Improve educational clarity for future contributors
+1. Work happens in project-specific or blueprint repos
+2. Reusable patterns and lessons are extracted into this handbook
+3. The handbook is updated and referenced by future work
+4. AI personas and knowledge banks are improved based on real usage
 
-This creates a virtuous cycle of consistency and velocity.
+This creates a virtuous cycle of continuous improvement across the entire Pixel Journey ecosystem.
