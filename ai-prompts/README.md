@@ -15,8 +15,9 @@ ai-prompts/
 │   ├── design-documentation-feedback/
 │   └── content-community-education/
 ├── knowledge-banks/
-│   ├── example.md                 # General / Game Systems example
-│   └── wallet-security.md         # Wallet security & self-custody
+│   ├── example.md
+│   ├── wallet-security.md
+│   └── design-system.md
 └── README.md
 ```
 
@@ -47,8 +48,9 @@ ai-prompts/
 
 ## Knowledge Banks
 
-- `knowledge-banks/example.md` — General example (Game Systems focused)
-- `knowledge-banks/wallet-security.md` — Wallet security & self-custody focused
+- `knowledge-banks/example.md` — General / Game Systems example
+- `knowledge-banks/wallet-security.md` — Wallet security & self-custody
+- `knowledge-banks/design-system.md` — Design system integration & pixel UI
 
 ## Contributing New Templates
 
