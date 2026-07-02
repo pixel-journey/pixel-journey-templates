@@ -4,6 +4,8 @@
 
 Use this alongside `educational-support-bot.md`, `px-core-architect.md`, or any persona when broad Px context is needed.
 
+See `EDUCATIONAL-QUALITY-STANDARD.md` and `PATTERNS.md` for quality and implementation guidance.
+
 ## Core Philosophy
 - Serious engineering + meme culture + retro-pixel joy
 - Community-driven, trustless/verifiable mechanics
@@ -30,8 +32,9 @@ Use this alongside `educational-support-bot.md`, `px-core-architect.md`, or any 
 ## Where to Find Things
 - Standards & Rules → `STANDARDS.md`
 - Reusable Patterns → `PATTERNS.md`
+- Educational Quality → `EDUCATIONAL-QUALITY-STANDARD.md`
 - Educational Guides → `docs/`
-- AI Personas & Knowledge Banks → `ai-prompts/`
+- AI Personas & Knowledge Banks → `ai-prompts/` + `knowledge-banks/`
 - Ecosystem Map → `ECOSYSTEM.md`
 - Glossary → `GLOSSARY.md`
 
