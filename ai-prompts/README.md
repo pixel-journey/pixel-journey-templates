@@ -17,20 +17,23 @@ These prompts allow us to quickly instantiate specialized AI collaborators for d
 
 ## Available Templates
 
+### Development & Architecture
 - `px-core-architect.md` — Overall Px architecture, principles, patterns, and high-level planning
 - `wax-client-specialist.md` — WAX client-side development (AtomicAssets, Hyperion, pagination, caching, GitOps)
 - `game-systems-designer.md` — Verifiable game mechanics, on-chain entropy, Hot or Not, leaderboards, progression
 - `wallet-security-engineer.md` — Encrypted vaults, key derivation, signing UX, self-custody
 - `pxpackages-specialist.md` — Monorepo structure, shared packages (@pxjourney/*), reusability
-- `educational-documenter.md` — High-quality layered documentation and explanations
+
+### Design, Documentation & Feedback
 - `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
+- `educational-documenter.md` — High-quality layered documentation and explanations
+- `critical-feedback-tester.md` — Rigorous qualitative feedback and testing
 
 ## Contributing New Templates
 
-If you create a new specialized prompt that proves valuable, please:
-- Add it to this folder following the existing style and quality bar
-- Update `AI_PROMPTS.md` with the new entry
-- Update this file
-- Reference the 7 Foundational Principles and `STANDARDS.md` / `PATTERNS.md`
+We welcome expansion into new domains (marketing/content creation, educational support bots, knowledge-bank templates, etc.). When adding one:
+- Follow the existing style and quality bar
+- Update `AI_PROMPTS.md` and this file
+- Reference the 7 Foundational Principles and relevant handbook sections
 
-See `AI_PROMPTS.md` (in the repo root) for the full index and usage philosophy.
+See `AI_PROMPTS.md` (in the repo root) for the full index, usage guidance, and how to combine prompts.
