@@ -4,6 +4,8 @@
 
 Use this alongside `wallet-security-engineer.md` (or `px-core-architect.md` when working on PxWallet features).
 
+See `PATTERNS.md` → Cross-Chain Key Derivation & Vault Patterns, and `EDUCATIONAL-QUALITY-STANDARD.md` for quality expectations.
+
 ## Core Principles
 - Never expose or transmit raw private keys
 - Use deterministic, hierarchical derivation from a user-protected master seed
@@ -21,7 +23,7 @@ Use this alongside `wallet-security-engineer.md` (or `px-core-architect.md` when
 
 ## Common Patterns
 - Vault logic is isolated and auditable
-- Derivation happens client-side
+- Derivation happens client-side with strong encryption at rest
 - Users see derived addresses without ever seeing seed material
 - Transaction review modals with clear signing intent
 - Recovery and backup flows must be first-class
@@ -36,6 +38,7 @@ Use this alongside `wallet-security-engineer.md` (or `px-core-architect.md` when
 - `PATTERNS.md` → Cross-Chain Key Derivation & Vault Patterns
 - `ai-prompts/wallet-security-engineer.md`
 - `docs/PXWALLET_ARCHITECTURE_OVERVIEW.md`
+- `knowledge-banks/cross-chain.md`
 
 ## Benefits
 - More accurate and consistent advice on wallet features
