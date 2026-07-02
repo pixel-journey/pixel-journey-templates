@@ -24,9 +24,13 @@ Knowledge banks live in `ai-prompts/knowledge-banks/`.
 
 ## How to Combine Prompts + Knowledge Banks
 
-You can combine multiple personas and attach knowledge banks. Examples are listed in the sections below.
+You can combine multiple personas and attach knowledge banks. Examples:
 
-See `ai-prompts/knowledge-banks/example.md` for a knowledge bank structure example.
+- **Core Architect + Game Systems Designer** + Hot or Not knowledge bank — Planning a new Hot or Not feature.
+- **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback.
+- **Educational Support Bot** + Educational Support or Px Fundamentals knowledge bank — Helping new contributors learn the ecosystem.
+
+See `ai-prompts/knowledge-banks/` for available knowledge banks.
 
 ## Available Specializations
 
