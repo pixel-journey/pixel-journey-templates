@@ -4,6 +4,8 @@
 
 Use this alongside `game-systems-designer.md` (and `px-core-architect.md` when planning new game features).
 
+See `PATTERNS.md` → Verifiable On-Chain Entropy, Leaderboards, Verifiable Voting, and `EDUCATIONAL-QUALITY-STANDARD.md` for quality expectations.
+
 ## Core Principles
 - All randomness uses on-chain entropy (TX hash + block header derivation)
 - Every mechanic must be verifiable by users
@@ -14,8 +16,7 @@ Use this alongside `game-systems-designer.md` (and `px-core-architect.md` when p
 ## Key Hot or Not Mechanics
 - Verifiable pairing via memos + entropy
 - PXJ voting with reward splits (commonly 50/50)
-- Leaderboards combining surviving mint rank + weighted score
-- XP, streaks, and badge progression tied to on-chain actions
+- Leaderboards combining surviving mint rank, weighted score, XP, and streaks
 - Tiered ownership (Holder → Stacker → Whale → Kraken) with surviving mint rank importance
 
 ## Common Patterns
@@ -28,6 +29,7 @@ Use this alongside `game-systems-designer.md` (and `px-core-architect.md` when p
 - `PATTERNS.md` → Verifiable On-Chain Entropy, Leaderboards, Verifiable Voting
 - `docs/ONCHAIN_ENTROPY_GUIDE.md`
 - `ai-prompts/game-systems-designer.md`
+- `knowledge-banks/example.md`
 
 ## Benefits
 - More consistent and accurate game mechanics design
