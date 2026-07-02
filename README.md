@@ -37,8 +37,9 @@ This handbook is the answer.
 | **STANDARDS.md**         | The rules, checklists, and expected shapes for Px work                 | Contributors, maintainers, AI agents |
 | **PATTERNS.md**          | Overviews + requirements of recommended implementation approaches      | Feature development, consistency reviews |
 | **ECOSYSTEM.md**         | Map of all major Px repos, how they relate, and their current maturity | Onboarding, planning, discovering where to contribute |
+| **GLOSSARY.md**          | Definitions of key Px terms and concepts                               | New contributors and quick reference |
 | **CONTRIBUTING.md**      | How to contribute to this handbook and the wider ecosystem             | New and returning contributors |
-| **docs/**                | Deeper educational guides (WAX client-side patterns, on-chain entropy, etc.) | Learning the "Px way" deeply |
+| **docs/**                | Deeper educational guides (WAX client-side, on-chain entropy, etc.)    | Learning the "Px way" deeply |
 | **.github/**             | Org-wide issue, PR, workflow, and repo templates                       | New repos and contribution hygiene |
 
 ---
@@ -61,7 +62,7 @@ These principles are not suggestions. They are the foundation that makes the ent
 
 ## How to Use This Handbook
 
-- **New to Px?** Start with `ECOSYSTEM.md` + Foundational Principles.
+- **New to Px?** Start with `ECOSYSTEM.md` + `GLOSSARY.md` + Foundational Principles.
 - **Building a feature?** Check the relevant section in `PATTERNS.md` first.
 - **Starting a new repo or package?** Follow `STANDARDS.md` + expected shape.
 - **Reviewing code or PRs?** Use the checklists in `STANDARDS.md`.
@@ -82,10 +83,10 @@ This approach keeps the handbook focused, maintainable, and authoritative.
 ## Next Steps for This Repo
 
 This handbook is a living document. As the ecosystem matures, we will:
-- Expand `PATTERNS.md` with additional high-value patterns
-- Add more educational guides under `docs/`
-- Refine standards and ecosystem mapping based on real usage in PxWallet, Hot or Not, PxPackages, etc.
-- Keep documentation quality at the highest level (layered, scannable, educational)
+- Expand `PATTERNS.md` with additional high-value patterns as they emerge from real development
+- Add more educational guides under `docs/` when topics warrant deeper treatment
+- Keep `GLOSSARY.md`, `STANDARDS.md`, and `ECOSYSTEM.md` updated
+- Maintain extremely high documentation quality across the org
 
 ---
 
