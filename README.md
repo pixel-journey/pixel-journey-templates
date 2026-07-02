@@ -39,7 +39,7 @@ Pixel Journey is a complex, multi-disciplinary ecosystem. To maintain velocity a
 
 ## Foundational Principles
 
-Every project and contribution in Pixel Journey is expected to follow the 7 non-negotiable principles (detailed in `STANDARDS.md` and the root `README.md`):
+Every project and contribution in Pixel Journey is expected to follow the 7 non-negotiable principles (detailed in `STANDARDS.md`):
 
 1. ZERO Custom Contract Overhead
 2. Client-Side Sovereignty
@@ -55,7 +55,7 @@ Every project and contribution in Pixel Journey is expected to follow the 7 non-
 
 We heavily use specialized AI agents. This repo includes high-quality prompt templates (`ai-prompts/`) so custom agents can be instantiated with deep alignment to Px architecture, patterns, and educational standards.
 
-**Available Specializations** (in `ai-prompts/`):
+**Available Specializations**:
 - `px-core-architect.md` — Overall Px architecture, principles, patterns, roadmap
 - `wax-client-specialist.md` — WAX client-side (AtomicAssets, Hyperion, pagination, caching, GitOps)
 - `game-systems-designer.md` — Verifiable mechanics, on-chain entropy, Hot or Not, leaderboards, XP
@@ -73,4 +73,16 @@ See `AI_PROMPTS.md` for usage instructions and how to create new specializations
 - **Starting new work?** Follow `STANDARDS.md`.
 - **Reviewing PRs?** Use checklists in `STANDARDS.md`.
 
-This handbook + AI prompt templates create a powerful system for consistent, high-velocity Px development.
+---
+
+## Living Document
+
+This handbook is designed to evolve with the ecosystem. New patterns, guides, or AI specializations will be added as they prove valuable through real work in PxWallet, Hot or Not, PxPackages, and community contributions.
+
+We prioritize quality and usefulness over completeness. The goal is to have a focused, high-signal reference that accelerates consistent, educational Px development.
+
+---
+
+**Built for the long-term health, consistency, and velocity of the Pixel Journey ecosystem.**
+
+*PxWallet • Px Hot or Not • Pixal PFPs • YEET • PxPackages • GitBook Knowledge Bank*
