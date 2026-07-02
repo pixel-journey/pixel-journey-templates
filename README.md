@@ -21,6 +21,7 @@ It works alongside:
 - **`pixel-journey-design-system`**: Contains the detailed visual language, design tokens, component specifications, and style guide. This handbook references it heavily (especially in UI-related patterns and the `design-system-integrator.md` prompt) but does not duplicate its content.
 - **`pixel-journey-standards`**: Contains foundational engineering and Web3 rules. This handbook builds on top of it with Px-specific enforcement, patterns, and educational guidance.
 - **Individual Px Repos** (PxWallet, Hot or Not, etc.): These are the living implementations. We extract generalizable patterns and principles from them into this handbook, but we do not create project-specific deep summaries here.
+- **`wax-ecosystem-blueprint-catalog`**: Planning and indexing catalog for individual WAX public infrastructure blueprint repositories. We share strong alignment on educational quality and have cross-referenced standards.
 
 ---
 
@@ -32,16 +33,17 @@ Pixel Journey is a complex, multi-disciplinary ecosystem. To maintain velocity a
 
 ## What You Will Find Here
 
-| Section                  | Purpose                                                                 | Best For |
-|--------------------------|-------------------------------------------------------------------------|----------|
-| **STANDARDS.md**         | Rules, checklists, expected shapes                                      | All contributors & AI agents |
-| **PATTERNS.md**          | Pattern overviews + requirements + best usage                           | Feature development |
-| **ECOSYSTEM.md**         | Org map and relationships                                               | Onboarding & planning |
-| **GLOSSARY.md**          | Key Px terms and concepts                                               | Quick reference |
-| **AI_PROMPTS.md**        | Specialized prompt templates for AI agents focused on Px/WAX/Web3       | Creating consistent AI collaborators |
-| **CONTRIBUTING.md**      | How to contribute                                                       | New and returning contributors |
-| **docs/**                | Deep educational guides                                                 | Learning core topics deeply |
-| **.github/**             | Org-wide templates                                                      | Hygiene |
+| Section                          | Purpose                                                                 | Best For |
+|----------------------------------|-------------------------------------------------------------------------|----------|
+| **STANDARDS.md**                 | Rules, checklists, expected shapes                                      | All contributors & AI agents |
+| **PATTERNS.md**                  | Pattern overviews + requirements + best usage                           | Feature development |
+| **EDUCATIONAL-QUALITY-STANDARD.md** | What high-quality, reference-grade educational output looks like     | Documentation, blueprints, guides |
+| **ECOSYSTEM.md**                 | Org map and relationships                                               | Onboarding & planning |
+| **GLOSSARY.md**                  | Key Px terms and concepts                                               | Quick reference |
+| **AI_PROMPTS.md**                | Specialized prompt templates for AI agents focused on Px/WAX/Web3       | Creating consistent AI collaborators |
+| **CONTRIBUTING.md**              | How to contribute                                                       | New and returning contributors |
+| **docs/**                        | Deep educational guides                                                 | Learning core topics deeply |
+| **.github/**                     | Org-wide templates                                                      | Hygiene |
 
 ---
 
@@ -76,6 +78,7 @@ We heavily use specialized AI agents. This repo includes high-quality prompt tem
 - `design-system-integrator.md`
 - `educational-documenter.md`
 - `critical-feedback-tester.md`
+- `technical-writer.md`
 
 **Content, Community & Education**
 - `marketing-content-creator.md`
@@ -89,7 +92,7 @@ See `AI_PROMPTS.md` for usage instructions, how to combine prompts, and the know
 
 - **New to Px?** Start with `ECOSYSTEM.md` + `GLOSSARY.md` + `AI_PROMPTS.md`.
 - **Building features?** Check `PATTERNS.md` + relevant AI prompt.
-- **Starting new work?** Follow `STANDARDS.md`.
+- **Starting new work?** Follow `STANDARDS.md` + `EDUCATIONAL-QUALITY-STANDARD.md`.
 - **Reviewing PRs?** Use checklists in `STANDARDS.md`.
 
 ---
