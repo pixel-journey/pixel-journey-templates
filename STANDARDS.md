@@ -1,70 +1,59 @@
 # STANDARDS.md
 
-**Pixel Journey Development Standards & Expected Shapes**
+**Standards, Rules, and Expected Repository Shapes for Pixel Journey**
 
-This document defines the non-negotiable rules and the target shape for all work across the Pixel Journey GitHub Organization.
+This document defines the non-negotiable rules and expected shapes for all work in the Pixel Journey organization. Every contribution and project should follow these standards.
 
-## 1. Foundational Principles (Must Follow)
+---
 
-See the root `README.md` for the seven core principles. They are repeated here for emphasis because they govern everything:
+## The 7 Foundational Principles
 
-- ZERO Custom Contract Overhead
-- Client-Side Sovereignty
-- On-Chain Entropy for Randomness
-- WharfKit First (no legacy auth libs)
-- Design System Alignment
-- Educational Excellence at every layer
-- Config-Driven & Composable
+These principles govern all human and AI-assisted work in Pixel Journey. They are non-negotiable unless there is an extremely strong, documented reason otherwise.
 
-Any PR or new repo that violates these will be asked to realign.
+1. **ZERO Custom Contract Overhead** — Maximize existing public primitives (atomicassets, alcorammswap, eosio.msig, Hyperion). Avoid new smart contracts unless absolutely unavoidable.
+2. **Client-Side Sovereignty** — Rely entirely on public indexing (Hyperion, AtomicAssets API), local browser storage, and client-side processing. Use GitOps for data pipelines.
+3. **On-Chain Entropy for Randomness** — For all randomized game mechanics, use deterministic client-side parsing of WharfKit broadcast transaction hashes combined with block headers.
+4. **WharfKit First** — Use WharfKit (Session Kit, Account Kit, Contract Kit) exclusively. No legacy UAL, eosjs, or deprecated libraries.
+5. **Design System Alignment** — Base all UI work on tokens and primitives from `pixel-journey-design-system`. Maintain glassmorphic + optional retro-pixel aesthetic.
+6. **Educational Excellence** — Every output must be exceptionally clear, layered, and educational. New developers (human or AI) must understand *why* every decision was made.
+7. **Config-Driven & Composable** — Everything should be tunable via config where possible. Prefer modular, reusable components.
 
-## 2. Repository Shape (Target State)
+---
 
-A well-formed Px repository should contain:
+## Expected Repository Shape
 
-- Clear root `README.md` with vision, quickstart, architecture overview, and contribution guide
-- `CONTRIBUTING.md` (or link to org standards)
-- `.github/` with appropriate issue/PR templates and workflows
-- Strict TypeScript (no `any` except in very narrow justified cases)
-- Comprehensive interfaces/types for all domain concepts (assets, sessions, on-chain actions, etc.)
-- Layered documentation (big picture → specific decisions → inline comments)
-- Working demo or example mode where applicable
-- Alignment with `pixel-journey-design-system` for all UI work
+All Px repos should generally follow this structure (adjusted for project needs):
 
-## 3. Code Quality Bar
+- Clear `README.md` with positioning, principles, and how to get started
+- `STANDARDS.md` and `PATTERNS.md` references (or direct adoption from this handbook)
+- Proper TypeScript strict mode and clean builds
+- Use of WharfKit for all on-chain interactions
+- Alignment with `pixel-journey-design-system` for UI work
+- Educational comments and documentation quality
+- Proper `.github/` templates (PR template referencing this handbook)
 
-- Prefer composition and small, focused modules
-- State management: Zustand for client state, TanStack Query for server/async state
-- Styling: Tailwind + design-system tokens/components + Framer Motion for motion
-- Testing: Vitest for unit/logic, Playwright for critical flows (where relevant)
-- No unnecessary dependencies. Every added package must be justified.
+---
 
-## 4. Documentation Standards
+## Contribution Checklist
 
-Every significant pattern, component, or feature must have:
-- A clear "Why" section (architectural rationale)
-- Usage example
-- Customization / extension points
-- Relationship to other Px patterns or repos
+Before submitting a PR, ensure:
 
-The documentation quality target is extremely high — inspired by the best educational examples in the broader WAX ecosystem.
+- [ ] Follows the 7 Foundational Principles
+- [ ] Uses patterns from `PATTERNS.md` where applicable
+- [ ] Aligns with `pixel-journey-design-system` for UI
+- [ ] Includes or updates educational documentation where relevant
+- [ ] Passes linting, TypeScript checks, and builds cleanly
+- [ ] References this handbook where decisions are explained
 
-## 5. On-Chain & Web3 Patterns
+---
 
-- Always use public endpoints with fallbacks
-- Cursor-based pagination for large collections
-- Preserve `template_mint` when working with AtomicAssets (critical for surviving mint rank and early minter recognition)
-- All randomness in games/features must be derivable client-side from TX hash + recent block header
-- User actions that change chain state must have clear loading, error, and success states
+## AI Collaboration Expectations
 
-## 6. Contribution & Review Checklist
+When working with AI agents:
 
-Before merging, verify:
-- [ ] Aligns with Foundational Principles
-- [ ] Follows expected repository shape
-- [ ] Documentation is layered and educational
-- [ ] Design System tokens/components used (or clear justification)
-- [ ] No legacy auth libraries
-- [ ] Educational value for future Px devs has been considered
+- Use the specialized prompt templates from `ai-prompts/`
+- Pair personas with relevant knowledge banks when available
+- Expect outputs to follow the educational and structural standards in this handbook
+- Review AI-generated work against the 7 Foundational Principles
 
-This checklist lives in PR templates and is enforced culturally.
+These standards will evolve as the ecosystem grows. Major changes should be discussed and documented here.
