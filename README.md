@@ -75,11 +75,11 @@ See `AI_PROMPTS.md` for usage instructions and how to create new specializations
 
 ---
 
-## Living Document
+## Living Document & Future Expansion
 
 This handbook is designed to evolve with the ecosystem. New patterns, guides, or AI specializations will be added as they prove valuable through real work in PxWallet, Hot or Not, PxPackages, and community contributions.
 
-We prioritize quality and usefulness over completeness. The goal is to have a focused, high-signal reference that accelerates consistent, educational Px development.
+We prioritize quality and usefulness over trying to predict every possible need in advance. The goal is to have a focused, high-signal reference that accelerates consistent, educational Px development.
 
 ---
 
