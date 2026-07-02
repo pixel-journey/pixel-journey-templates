@@ -4,8 +4,8 @@
 
 [![WAX](https://img.shields.io/badge/WAX-Antelope-blue?logo=ethereum)](https://wax.io) [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?logo=typescript)](https://www.typescriptlang.org/) [![Next.js](https://img.shields.io/badge/Next.js-15+-000000?logo=nextdotjs)](https://nextjs.org/) [![WharfKit](https://img.shields.io/badge/WharfKit-Session%20Kit-orange)](https://wharfkit.com) [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> This is the single source of truth for **how we build** in the Pixel Journey organization — including how we collaborate with AI agents.
-> It defines the standards, recommended patterns, architectural principles, ecosystem overview, and specialized AI prompt templates that keep every Px project consistent, high-quality, educational, and fast to develop.
+> This is the single source of truth for **how we build** in the Pixel Journey organization — including how we collaborate with specialized AI agents.
+> It defines the standards, recommended patterns, architectural principles, ecosystem overview, and AI prompt templates that keep every Px project consistent, high-quality, educational, and fast to develop.
 
 **This repo contains the instructions, standards, pattern overviews, expected shapes, and AI collaboration templates** that all other repos in the `pixel-journey` organization follow (or are actively aligning to).
 
@@ -18,15 +18,7 @@ It works alongside:
 
 ## Core Purpose
 
-Pixel Journey is a complex, multi-disciplinary ecosystem. To maintain velocity and consistency while onboarding new humans *and* AI collaborators, we maintain one authoritative handbook that covers:
-
-- Non-negotiable principles
-- Recommended implementation patterns
-- Expected shapes for repos and contributions
-- Ecosystem mapping
-- Specialized AI prompt templates for different development domains
-
-This enables both human developers and AI agents to work at a high level of alignment with Px values and technical standards.
+Pixel Journey is a complex, multi-disciplinary ecosystem. To maintain velocity and consistency while onboarding both human developers and AI collaborators, we maintain one authoritative handbook covering principles, patterns, ecosystem mapping, and specialized AI prompt templates.
 
 ---
 
@@ -39,7 +31,7 @@ This enables both human developers and AI agents to work at a high level of alig
 | **ECOSYSTEM.md**         | Org map and relationships                                               | Onboarding & planning |
 | **GLOSSARY.md**          | Key Px terms and concepts                                               | Quick reference |
 | **AI_PROMPTS.md**        | Specialized prompt templates for AI agents focused on Px/WAX/Web3       | Creating consistent AI collaborators |
-| **CONTRIBUTING.md**      | How to contribute                                                       | Contributors |
+| **CONTRIBUTING.md**      | How to contribute                                                       | New and returning contributors |
 | **docs/**                | Deep educational guides                                                 | Learning core topics deeply |
 | **.github/**             | Org-wide templates                                                      | Hygiene |
 
@@ -47,22 +39,38 @@ This enables both human developers and AI agents to work at a high level of alig
 
 ## Foundational Principles
 
-(See `README.md` top section and `STANDARDS.md` for the full 7 principles. They govern all human and AI-assisted work.)
+Every project and contribution in Pixel Journey is expected to follow the 7 non-negotiable principles (detailed in `STANDARDS.md` and the root `README.md`):
+
+1. ZERO Custom Contract Overhead
+2. Client-Side Sovereignty
+3. On-Chain Entropy for Randomness
+4. WharfKit First
+5. Design System Alignment
+6. Educational Excellence
+7. Config-Driven & Composable
 
 ---
 
-## AI Collaboration Layer (New)
+## AI Collaboration Layer
 
-We heavily leverage specialized AI agents. This repo now includes high-quality prompt templates (`ai-prompts/`) so that custom agents can be instantiated with deep alignment to Px architecture, patterns, educational standards, and principles.
+We heavily use specialized AI agents. This repo includes high-quality prompt templates (`ai-prompts/`) so custom agents can be instantiated with deep alignment to Px architecture, patterns, and educational standards.
 
-See `AI_PROMPTS.md` for usage and available specializations (Core Architect, WAX Client-Side, Game Systems, Wallet Security, Design Integrator, Educational Documenter, etc.).
+**Available Specializations** (in `ai-prompts/`):
+- `px-core-architect.md` — Overall Px architecture, principles, patterns, roadmap
+- `wax-client-specialist.md` — WAX client-side (AtomicAssets, Hyperion, pagination, caching, GitOps)
+- `game-systems-designer.md` — Verifiable mechanics, on-chain entropy, Hot or Not, leaderboards, XP
+- `educational-documenter.md` — High-quality layered documentation
+- `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
+
+See `AI_PROMPTS.md` for usage instructions and how to create new specializations.
 
 ---
 
 ## How to Use This Handbook
 
-- New to Px or AI collaboration? Start with `ECOSYSTEM.md` + `GLOSSARY.md` + `AI_PROMPTS.md`.
-- Building features? Use `PATTERNS.md` + relevant AI prompt.
-- Starting new work? Follow `STANDARDS.md`.
+- **New to Px?** Start with `ECOSYSTEM.md` + `GLOSSARY.md` + `AI_PROMPTS.md`.
+- **Building features?** Check `PATTERNS.md` + relevant AI prompt.
+- **Starting new work?** Follow `STANDARDS.md`.
+- **Reviewing PRs?** Use checklists in `STANDARDS.md`.
 
-This handbook + its AI prompt templates create a powerful flywheel for consistent, high-velocity Px development.
+This handbook + AI prompt templates create a powerful system for consistent, high-velocity Px development.
