@@ -1,208 +1,155 @@
 # pixel-journey-templates
 
-**The Canonical Educational Boilerplate & Reference Implementation Arsenal for Pixel Journey (Px) on WAX / Antelope**
+**The Canonical Library of Design Templates, Feature Patterns & Scaffolding for the Pixel Journey (Px) Ecosystem**
 
 [![WAX](https://img.shields.io/badge/WAX-Antelope-blue?logo=ethereum)](https://wax.io) [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?logo=typescript)](https://www.typescriptlang.org/) [![Next.js](https://img.shields.io/badge/Next.js-15+-000000?logo=nextdotjs)](https://nextjs.org/) [![WharfKit](https://img.shields.io/badge/WharfKit-Session%20Kit-orange)](https://wharfkit.com) [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Mission**: Equip every builder — human or AI — with pixel-perfect, production-grade starting points that embody the Px ethos: **trustless verifiable mechanics**, **client-side sovereignty**, **zero custom contract overhead**, **retro-pixel joy + serious engineering**, and **unparalleled educational clarity**.
+> **Mission**: Give the Px team and every future contributor **design templates, feature pattern templates, and project scaffolding** that make consistent, high-quality, pixel-perfect development **fast and joyful** — across PxWallet, Hot or Not, Pixal PFPs, PxPackages, docs, and every new idea.
 
-Every template is a self-contained learning resource + runnable foundation. Clone one, understand *why* every architectural decision was made, customize via config, and ship.
+This is not just boilerplate. It is the shared design language + implementation patterns that keep the entire ecosystem coherent while letting builders move at speed.
 
-**This repo is the long-term foundation layer for the entire Pixel Journey GitHub Organization.** It will evolve alongside `pixel-journey-design-system` (theming & primitives) and `pixel-journey-standards` (engineering & Web3 rules), and feed into the upcoming `PxPackages` monorepo (@pxjourney/* scope).
+**This repo works hand-in-hand with `pixel-journey-design-system` (tokens, components, visual language) and `pixel-journey-standards` (engineering rules, Web3 patterns).** Together they form the foundation layer for PxPackages and all future Px work.
 
 ---
 
-## Quick Start (Pick Your Template)
+## Quick Start
 
 ```bash
-# 1. Use GitHub template (recommended for new repos)
-gh repo create my-px-dapp --template pixel-journey/pixel-journey-templates --public
+# Create a new Px project from a template
+gh repo create my-new-px-feature --template pixel-journey/pixel-journey-templates
 
-# 2. Or clone a specific template locally
-git clone https://github.com/pixel-journey/pixel-journey-templates.git
-cd pixel-journey-templates/templates/nextjs-dapp
-npm install && npm run dev
-
-# 3. For the full Analytics/GitOps Tracker template (gold standard reference)
-cd templates/analytics-tracker
-git clone ... # (or copy from this repo)
-npm run hydrate   # one-time (or use demo data)
-npm run calculate # rarity + leaderboards
-# Then open demo/index.html
+# Or explore locally
+cd templates/
+# Pick a category: design-ui/, feature-patterns/, nextjs-dapp/, monorepo-pkg/, etc.
 ```
 
-All templates include:
-- Strict TypeScript + comprehensive interfaces
-- WharfKit (Session Kit, Contract Kit) — never legacy UAL/eosjs
-- Tailwind + Shadcn/Radix + Framer Motion (glassmorphic + optional CRT/Pixel skin)
-- Full educational READMEs at every layer (root → category → template → inline comments)
-- Working demo with mock or live public data
-- .github/workflows CI ready to enable
-- Config-driven everything (weights, endpoints, theme, collection)
+Every template includes:
+- Strict TypeScript + full interfaces
+- Deep integration points for the Px Design System
+- WharfKit-first (Session + Contract Kit)
+- Glassmorphic + optional retro-pixel / CRT theme hooks
+- Layered educational READMEs (vision → usage → architecture decisions → customization)
+- Working demo or Storybook-ready examples
+- Ready-to-extend structure aligned with PxPackages future
 
 ---
 
-## Vision & Alignment with Pixel Journey Ecosystem
+## Why "Templates" Matter for Pixel Journey
 
-Pixel Journey (Px) is building a community-driven, verifiable, meme-infused Web3 ecosystem on WAX:
-- **Pixal PFPs** (Holder / Stacker / Whale / Kraken tiers + WaxRock, burns/airdrop mechanics)
-- **YEET** meme coin (fair launch, airdrops, PURR rewards, staking, no team allocation)
-- **PxWallet** (god-mode self-custody vault, cross-chain derivation WAX→EVM/Solana, Chrome MV3 + PWA, auto-sign, DeFi)
-- **Px Hot or Not** alpha (verifiable voting arena with PXJ transfers, leaderboards, XP/streaks, on-chain entropy)
-- **PxTicker** & analytics grids (Alcor AMM, trait exposure, whale tiering)
-- **PxPackages** monorepo standardization (@pxjourney/core, @pxjourney/ui, @pxjourney/game, etc.)
-- **GitBook Knowledge Bank** (WAX/EVM guides, docs.pixeljourney.xyz)
+Px is growing fast. To keep quality high and onboarding friction low (for both internal team and new community devs), we need:
 
-This templates repo exists so that every future piece of that vision (and community forks) can be built **fast, correctly, and educationally**.
+- **Design consistency** — Every new screen or component feels like it belongs in the Px universe
+- **Implementation consistency** — Common patterns (session management, asset fetching with cache, verifiable on-chain actions, modals, leaderboards, etc.) are solved once, documented excellently, and reused
+- **Speed** — A new feature or mini-dApp can be scaffolded in hours, not days, while still following all the right architectural principles
+- **Educational onboarding** — New devs (or AI agents) can read a template and understand not just *what* to do, but *why* we do it this way in Px
 
-We follow the sacred principles from the Lead Architect mandate:
-
-### Core Architectural Principles (Non-Negotiable in Every Template)
-
-1. **ZERO CUSTOM CONTRACT OVERHEAD** — Maximize existing public primitives: `atomicassets`, `atomicmarket`, `alcorammswap` (Concentrated Liquidity v2), `eosio.msig`, `eosio.token`. No new smart contracts unless absolutely unavoidable for core protocol.
-2. **STATE PATTERNS & CLIENT-SIDE RENDERING** — No centralized backend DBs. Everything via public indexing (Hyperion History API, Light-API, native RPC tables), localStorage caching, and client-side processing. GitOps for data pipelines.
-3. **ON-CHAIN ENTROPY** — All randomized game mechanics use deterministic client-side parsing of WharfKit-broadcast transaction hashes + block headers. Provably fair, zero RAM/oracle cost.
-4. **EDUCATIONAL SUPREMACY** — Every template must be the best possible teacher. Layered READMEs (big-picture handbook → file-by-file guides → decision matrices → inline annotations). A new dev or AI must be able to understand the *entire system* without external hand-holding.
-5. **PIXEL-PERFECT + RETRO-FUTURE UX** — Optional CRT scanlines, Press Start 2P typography, 120Hz fluid haptics-ready interactions, glassmorphic dark theme with neon Px accents. Luxury feel on modern hardware.
-6. **COMPOSABLE & CONFIG-DRIVEN** — One `config.json` (or env) controls collection names, rarity weights, API nodes, feature flags, theme. Easy to fork for new Px sub-projects.
+This repo is the home for all of that.
 
 ---
 
-## MASTER PLAN: pixel-journey-templates v1.0 — Complete Template Ecosystem
+## Core Principles (Inherited from Px Lead Architect Mandate)
 
-This is the living master plan. We will iterate publicly here. Every phase delivers runnable, documented value.
-
-### Template Taxonomy (What We Will Build)
-
-We organize by **use-case category**, not by tech stack (stack is standardized across all).
-
-| Category                        | Priority | Est. Complexity | Key Deliverables & Educational Value                                                                 | Example Px Use Cases                          | Status      |
-|--------------------------------|----------|-----------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
-| **GitHub Org & Repo Scaffolding** | P0      | Low            | .github/ templates (workflows, issue/PR templates, CODEOWNERS, semantic labels), root package.json patterns, CONTRIBUTING.md gold standard | New repo bootstrap for any Px package or dApp | In Progress |
-| **Core Next.js dApp Starter**     | P0      | Medium         | Next.js 15 (App Router, Turbopack), WharfKit full integration, Zustand/TanStack Query stores, i18n (8+ locales), asset gallery, session management, Px design system hooks | PxWallet, Px Hot or Not frontend, PxTicker   | Planned     |
-| **Analytics / GitOps Tracker**    | P0      | Medium-High    | Generalized version of the excellent gkniftyheads-tracker (full source provided). Config-driven collection, cursor-pagination hydrate, delta-sync (mints+burns), weighted rarity + surviving_mint_rank engine, trait exposure split, beautiful interactive demo dashboard, daily GitHub Action self-updating, full file-by-file architecture handbook | Pixal PFP trait exposure & leaderboards, YEET holder analytics, Hot or Not XP leaderboards, any future collection | **Ready to Port** |
-| **Verifiable Game Mechanics**     | P1      | Medium         | On-chain entropy utils (pure TS, no deps) + Hot-or-Not voting arena template (PXJ xfer + 50% reward split, verifiable pairing via memo), XP/streak/badge systems, leaderboards | Px Hot or Not alpha v0.2+, future mini-games | Planned     |
-| **Wallet & Security Primitives**  | P1      | High           | Encrypted vault patterns (master pw + derived keys), cross-chain key derivation (WAX → EVM/Solana), Chrome MV3 extension (background/popup/content scripts), PWA + auto-sign opt-in, WharfKit Account Kit examples | PxWallet god-mode (150+ item roadmap)        | Planned     |
-| **Monorepo & @pxjourney/* Package** | P2     | Medium         | Turborepo / pnpm workspace template, tsup build, vitest + playwright, changesets, strict exports, alignment with PxPackages unification roadmap | Core utils, UI primitives, game SDK hooks, WAX SDK wrappers | Planned     |
-| **Canvas Pixel Mini-Game Base**   | P2      | Medium         | HTML5 Canvas + Web Workers for heavy data, retro pixel rendering, input handling, integration with on-chain entropy & WharfKit signing for on-chain actions | Future Px mini-games, asset visualizers      | Planned     |
-| **Documentation & Knowledge Bank**| P2      | Low            | GitBook-compatible MD structure, interactive demo embeds, WAX/EVM guide templates, navigation patterns (as audited in Px docs) | docs.pixeljourney.xyz knowledge bank         | Planned     |
-| **DeFi & Alcor Integration**      | P3      | Medium         | alcorammswap concentrated liquidity hooks, quote/routing/swap examples, limit orders, arbitrage detectors, PxTicker grid components | Px DeFi features, token analytics            | Planned     |
-
-### Phased Implementation Roadmap
-
-**Phase 1 — Foundation (Current Sprint)**
-- [x] Massive root README upgrade with full vision, principles, taxonomy & this plan
-- [ ] Upgrade all .github/ files (production CI matrix with lint/build/test, dependabot, labeler, stale)
-- [ ] Create `templates/` directory skeleton with category READMEs
-- [ ] Create `shared/` for common types, utils, config schemas (reusable across templates)
-- [ ] Update CONTRIBUTING.md, SECURITY.md, LICENSE to Px standards
-- [ ] Add root `config.json` example + schema
-- **Success Metric**: Any AI or dev can read root README and immediately understand the entire future of Px template strategy.
-
-**Phase 2 — Core dApp & Analytics Gold Standard (Next 1-2 weeks)**
-- Port & generalize the complete **gkniftyheads-tracker** (provided in full context) into `templates/analytics-tracker/`
-  - Make 100% config-driven (collection name, weights, API fallbacks, demoLimit, gzip)
-  - Keep *all* the educational excellence: file-by-file guides, WAX best practices section, decision matrices, formulas
-  - Add Px-branded demo data (Pixal PFP style) + live toggle
-  - Ensure it becomes the reference implementation for any future Px data/analytics tool
-- Scaffold `templates/nextjs-dapp/` with working WharfKit session, sample AtomicAssets query, Px glassmorphic UI shell, i18n stub, Zustand stores
-- **Success Metric**: `npm run dev` in analytics-tracker shows beautiful live-updating (demo) leaderboards + trait exposure in < 60s. New collection can be tracked by editing one config value.
-
-**Phase 3 — Game & Verifiable Mechanics (Following)**
-- Extract on-chain entropy utility (pure TS, no deps) + Hot-or-Not voting template
-- Verifiable seed/pairing via pxhot.pxj TX memos (as in current Px Hot or Not alpha planning)
-- Leaderboard + XP system with surviving ranks pattern (reuse from analytics tracker)
-
-**Phase 4 — Wallet, Package & Advanced**
-- Chrome ext + PWA wallet primitives
-- Monorepo package template aligned with PxPackages 92-point upgrade roadmap
-- Full cross-linking and example data from real Px repos (when ready)
-
-**Phase 5 — Polish, CLI & Ecosystem**
-- `create-px-app` CLI (or `npx` generator) that scaffolds from these templates
-- Storybook / interactive docs site (self-hosted or GitHub Pages)
-- Automated contribution checks (template checklist enforcement)
-- Public launch announcement on @PxJourney X + integration into Px GitBook
-
-**Long-term (v2+)**: Templates become living references — improvements from real Px dApps (PxWallet, Hot or Not, PxTicker) flow back here. The repo itself becomes a showcase of Px engineering quality.
+1. **ZERO CUSTOM CONTRACT OVERHEAD** — Leverage public WAX primitives (`atomicassets`, `alcorammswap`, `eosio.msig`, etc.).
+2. **Client-Side First** — Public indexing APIs + local state + caching. GitOps where data pipelines are needed.
+3. **On-Chain Entropy Ready** — All randomness uses deterministic TX hash + block header parsing (provably fair, zero extra cost).
+4. **Design System Aligned** — Every UI template consumes tokens/components from `pixel-journey-design-system` (or provides clear extension points).
+5. **Educational at Every Layer** — Root READMEs, category guides, per-template deep docs, and generous inline comments. The gkniftyheads-tracker example we explored showed the documentation quality bar we want everywhere.
+6. **Composable & Config-Driven** — Easy to customize for new Px sub-projects or community forks.
 
 ---
 
-## Why This Architecture Wins for Px & WAXFAMs Community
+## Template Categories (What Lives Here)
 
-| Approach                        | Cost | Educational Value | Onboarding Speed | Auditability | Recommendation for Px |
-|--------------------------------|------|-------------------|------------------|--------------|-----------------------|
-| **This Templates Repo (GitOps + Layered Docs)** | $0  | Excellent (layered + runnable) | Minutes         | Full Git history | **Strongly Recommended** |
-| Minimal boilerplate (create-next-app + manual) | $0 | Poor             | Hours            | Low          | Only for throwaway prototypes |
-| Custom backend-heavy           | $$  | Medium           | Days             | Medium       | Avoid for public goods   |
+We organize around **what helps builders move fastest with consistency**:
 
-**GitOps + Static + Educational** is the Px way: transparent, forkable, zero ongoing cost, perfect for community contributions and AI-assisted development.
+| Category                        | Focus                                      | Priority | Example Contents / Use Cases                                      | Status      |
+|--------------------------------|--------------------------------------------|----------|-------------------------------------------------------------------|-------------|
+| **Repo & GitHub Scaffolding**   | New project / package bootstrap            | P0       | Full repo templates, .github/ workflows, issue/PR templates, semantic PR config, CONTRIBUTING.md standards | In Progress |
+| **Design & UI Templates**       | Visual + component consistency             | P0       | Glassmorphic card templates, Asset Gallery shells, Modal / Drilldown templates, Leaderboard table shells, Tab navigation, CRT/Pixel theme toggles, Figma-to-code mapping guides | Planned     |
+| **Feature Pattern Templates**   | Reusable implementation patterns           | P0       | WharfKit Session Provider + hooks, Verifiable Randomness (on-chain entropy) hook, Asset Query + TanStack Cache pattern, On-chain Action Button (loading/error states), Verifiable Voting / Hot-or-Not UI + logic shell, XP/Streak badge system starter | Planned     |
+| **Full dApp / Mini-App Starters**| Complete runnable starting points         | P1       | Next.js 15 + WharfKit dApp shell (for PxWallet, Hot or Not frontend, PxTicker, community portals) | Planned     |
+| **Monorepo & Package Templates**| Alignment with future PxPackages           | P1       | Turborepo/pnpm workspace starter for @pxjourney/* packages, tsup + vitest setup, export maps, changesets | Planned     |
+| **Documentation Templates**     | Knowledge sharing & GitBook consistency    | P2       | GitBook folder structure templates, interactive demo embed patterns, WAX/EVM guide templates, README standards | Planned     |
+| **Advanced Reference Examples** | High-quality, fully documented showcases   | P3       | (Optional later) Generalized collection tracker / rarity engine patterns (inspired by excellent external examples like gkniftyheads-tracker) — only when it directly accelerates Px features | Future      |
+
+### Design & UI Templates (Core Focus)
+
+These are the heart of making Px feel cohesive:
+- Pre-built, themeable UI shells that match the Px Design System
+- Common Web3 UI patterns solved once (asset cards, trait displays, leaderboards with surviving ranks or XP, modals with drilldown)
+- Clear mapping from Figma / design-system components to production code
+- Optional retro-pixel / CRT skin toggle for that signature Px flavor
+
+### Feature Pattern Templates (The "Secret Sauce")
+
+These are modular, copy-paste or import-friendly implementations of things we do repeatedly in Px:
+- Session & wallet connection (WharfKit best practices)
+- Fetching & caching on-chain data (AtomicAssets + Hyperion patterns)
+- Verifiable on-chain actions with proper UX (signing, loading, error, success states)
+- On-chain entropy for games (pure client-side, deterministic from TX + block)
+- Leaderboard / ranking UI + logic shells (reusable for Hot or Not, Pixal tiers, holder analytics)
+
+New Px devs can drop these in and immediately have production-grade, consistent behavior.
 
 ---
 
-## WAX AtomicAssets & Public Infra Best Practices (Baked Into Every Template)
+## Revised Master Plan & Roadmap
 
-All templates that touch chain data will include (and educate on):
+**Phase 1 — Foundation (Current)**
+- [x] Root README realigned to design templates + feature patterns focus
+- [x] Production CI + Px-specific issue/PR templates (enforcing design-system alignment & educational docs)
+- [x] Initial `templates/` category scaffolding + READMEs
+- [ ] Flesh out `templates/design-ui/` and `templates/feature-patterns/` with first concrete templates (e.g. Glassmorphic Card, WharfKit Session Hook, Verifiable Randomness utility)
+- [ ] Create `shared/` types & utils that all templates can reference
+- **Success**: Any team member or new dev can open this repo and immediately see how to build consistent Px UIs and features quickly.
 
-- **Cursor-based pagination** (`lower_bound` + `sort=asset_id&order=asc`) — the only sane way for 100k+ collections (avoids deep page cliff). See `hydrate.js` pattern in analytics-tracker.
-- **Delta sync patterns** (mints via `after=` + burns via `burned=true` + `sort=updated`)
-- **Rate-limit friendly batching** + exponential backoff + multiple public endpoints (alcor, eosphere, etc.)
-- **POST for complex queries** when GET URL length limits hit
-- **Key fields mastery**: `asset_id`, `template_id`, `template_mint` (critical for surviving mint rank), `owner`, `burned`, `attributes`/`immutable_data`
-- **Client-side only processing** for rarity, exposure, leaderboards, XP — no DB needed for public dashboards
-- Full reference: https://onblock.dev/working-with-the-atomic-api (highly recommended reading, included in every relevant README)
+**Phase 2 — Core Design & Feature Templates (Next priority)**
+- High-quality, documented implementations of the most common Px UI patterns and feature primitives
+- Tight hooks into `pixel-journey-design-system`
+- Working demos / Storybook stories for each
+- Full educational documentation (why this pattern, how it fits Px architecture, customization points)
+
+**Phase 3 — Full Starters & Monorepo**
+- Polished `nextjs-dapp` starter
+- Monorepo package template aligned with PxPackages unification roadmap
+- `create-px-app` style generator (optional but powerful for speed)
+
+**Phase 4+ — Polish & Ecosystem**
+- Documentation templates
+- Advanced reference examples (only if they directly help Px velocity)
+- Bidirectional improvement loop with real Px dApps (improvements from PxWallet / Hot or Not flow back into templates)
+- Public announcement + integration into Px GitBook onboarding
 
 ---
 
-## Current Repository Structure (Evolving)
+## Current Repository Structure
 
 ```
 pixel-journey-templates/
-├── .github/                    # Org-wide GitHub automation & templates (upgrading now)
-│   ├── workflows/
-│   │   └── ci.yml              # Multi-job matrix (lint, build, test) — Phase 1
-│   ├── ISSUE_TEMPLATE/         # bug_report, feature_request (Px-specific)
-│   └── PULL_REQUEST_TEMPLATE.md
-├── templates/                  # The actual template library (Phase 1 scaffolding)
-│   ├── README.md               # Category overview + how to pick
-│   ├── github-org/             # For new org repos
-│   ├── nextjs-dapp/            # Core frontend starter
-│   ├── analytics-tracker/      # Gold standard — generalized gkniftyheads-tracker
-│   ├── game-verifiable/        # Hot-or-Not + entropy
-│   ├── wallet-primitives/      # Vault, cross-chain, ext
-│   └── ...
-├── shared/                     # Reusable TS types, utils, config schemas (reusable across templates)
-│   ├── types/
-│   ├── utils/
-│   └── config.schema.json
-├── docs/                       # Master educational guides
-│   ├── WAX_CLIENT_PATTERNS.md
-│   ├── ONCHAIN_ENTROPY_GUIDE.md
-│   └── CONTRIBUTING_TEMPLATES.md
-├── scripts/                    # Optional generators / validators
-├── README.md                   # You are here — the single source of truth
-├── CONTRIBUTING.md             # Detailed contribution checklist (template quality bar)
-├── config.example.json
-└── LICENSE
+├── .github/                      # GitHub scaffolding used by the whole org
+├── templates/
+│   ├── design-ui/                # Glassmorphic cards, modals, galleries, leaderboards, theme toggles
+│   ├── feature-patterns/         # Session management, verifiable entropy, asset queries, on-chain actions
+│   ├── nextjs-dapp/              # Full dApp starter shell
+│   ├── monorepo-pkg/             # For future @pxjourney/* packages
+│   ├── github-org/               # Repo bootstrap helpers
+│   └── documentation/            # GitBook + README templates
+├── shared/                       # Common TS types, config schemas, small utils
+├── docs/                         # Guides on "how to use templates in Px"
+├── README.md                     # This file — the living master plan
+└── CONTRIBUTING.md               # Quality bar for new templates
 ```
 
-Every sub-folder will eventually have its own exhaustive README.md (architecture, formulas, file inventory, customization, migration notes) — exactly like the gkniftyheads-tracker root and scripts/ READMEs.
+Every template folder will have its own deep README explaining vision, usage, architecture decisions, and how it supports consistent Px development.
 
 ---
 
-## Immediate Next Steps (This Conversation Thread)
+## Immediate Next Steps
 
-1. **Review & Align** on this Master Plan (adjust priorities, add missing categories, confirm Px branding).
-2. **Phase 1 Execution Begins Now** — I have already upgraded this root README. Next actions in thread:
-   - Push production-grade `.github/workflows/ci.yml` + new issue/PR templates
-   - Scaffold `templates/analytics-tracker/` by porting the complete, excellent gkniftyheads-tracker (with generalization layer)
-   - Create `templates/nextjs-dapp/` skeleton with WharfKit hello-world + Px UI shell
-3. Iterate: You give feedback or new requirements → I refine plan + execute next slice → commit directly to main (or PR if preferred).
+1. Confirm this revised direction (design templates + feature patterns for speed & consistency) feels right.
+2. I will continue Phase 1 by creating concrete first templates in `design-ui/` and `feature-patterns/` (starting with high-impact, frequently used pieces).
+3. We keep the educational excellence (layered docs) while focusing content on what accelerates actual Px work.
 
-We will keep every change **highly educational** and **pixel-perfect**.
+The gkniftyheads-tracker source you shared remains an outstanding example of **documentation quality** — we will apply that same rigorous, educational style to every template we create here, even if we are not porting its specific analytics engine right now.
 
----
-
-**Built with ❤️ for the Pixel Journey community, WAXFAMs, and every future builder who wants to understand *why* their dApp works.**
-
-*Part of the Pixel Journey GitHub Organization — PxWallet • Px Hot or Not • Pixal PFPs • YEET • PxPackages*
+Ready for the next slice. What would you like to build first?
