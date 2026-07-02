@@ -6,6 +6,8 @@ This document introduces reusable, high-quality prompt templates for creating sp
 
 These templates help us spin up consistent, aligned AI collaborators quickly. We also support pairing personas with pre-filled knowledge banks for even higher quality and consistency.
 
+See `EDUCATIONAL-QUALITY-STANDARD.md` for the broader quality expectations around educational output and documentation.
+
 ## Recommended Structure
 
 Personas are organized under `ai-prompts/personas/` in categorized subfolders:
@@ -29,6 +31,7 @@ You can combine multiple personas and attach knowledge banks. Examples:
 - **Core Architect + Game Systems Designer** + Hot or Not knowledge bank — Planning a new Hot or Not feature.
 - **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback.
 - **Educational Support Bot** + Educational Support or Px Fundamentals knowledge bank — Helping new contributors learn the ecosystem.
+- **Technical Writer + any persona** — Generating high-quality layered documentation.
 
 See `ai-prompts/knowledge-banks/` for available knowledge banks.
 
@@ -49,6 +52,7 @@ See `ai-prompts/knowledge-banks/` for available knowledge banks.
 | `design-system-integrator.md`      | Glassmorphic + pixel UI, design tokens, theming     | Frontend components, visual consistency            |
 | `educational-documenter.md`        | High-quality layered documentation                  | READMEs, guides, pattern documentation, onboarding |
 | `critical-feedback-tester.md`      | Rigorous qualitative feedback and testing           | Code reviews, UI/UX feedback, documentation review |
+| `technical-writer.md`              | Clear, layered, high-quality documentation          | Educational guides, architecture overviews, specs  |
 
 ### Content, Community & Education
 | Prompt File                        | Focus Area                                          | Recommended Use Cases                              |
@@ -62,7 +66,7 @@ New specializations and knowledge banks can be added as the ecosystem grows.
 
 Any new AI prompt template added to this repo must:
 - Explicitly reference the 7 Foundational Principles
-- Reference `STANDARDS.md` and `PATTERNS.md`
+- Reference `STANDARDS.md`, `PATTERNS.md`, and `EDUCATIONAL-QUALITY-STANDARD.md`
 - Emphasize educational output quality
 - Be modular and composable where possible
 
