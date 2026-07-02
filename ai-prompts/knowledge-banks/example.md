@@ -4,6 +4,8 @@
 
 This is an example of a pre-filled knowledge bank that can be paired with specialized AI personas (especially `game-systems-designer.md`).
 
+See `PATTERNS.md` → Verifiable On-Chain Entropy and Leaderboards, and `EDUCATIONAL-QUALITY-STANDARD.md` for quality expectations.
+
 ## Core Principles
 - All randomness uses on-chain entropy (TX hash + block header derivation)
 - Prefer client-side state and public data
@@ -14,17 +16,16 @@ This is an example of a pre-filled knowledge bank that can be paired with specia
 - Verifiable pairing via memos + entropy
 - Surviving mint rank + weighted rarity for leaderboards
 - XP, streaks, and badge progression tied to on-chain actions
-- Reward splits (commonly 50/50 for Hot or Not style mechanics)
 
 ## Common Decisions
-- Transparency: Always show source TX and derivation method in the UI
-- Prefer client-side calculations over custom contracts
-- Combine with `PATTERNS.md` sections on Verifiable On-Chain Entropy and Leaderboards
+- Reward splits: Usually 50/50 for Hot or Not style mechanics
+- Transparency: Always show source TX and derivation method in UI
 
 ## References
 - `PATTERNS.md` → Verifiable On-Chain Entropy, Leaderboards, Verifiable Voting
 - `docs/ONCHAIN_ENTROPY_GUIDE.md`
 - `ai-prompts/game-systems-designer.md`
+- `knowledge-banks/hot-or-not.md`
 
 ## Benefits of Using This Knowledge Bank
 - Faster, higher-quality responses from the AI
@@ -32,4 +33,4 @@ This is an example of a pre-filled knowledge bank that can be paired with specia
 - Easier onboarding for new AI collaborators
 - Reduces hallucination on Px-specific concepts
 
-You can create similar knowledge banks for any persona (Wallet Security, Design System, Educational Support, Marketing, etc.).
+You can create similar knowledge banks for any persona (Wallet Security, Design System, Educational Support, etc.). This approach scales well as the ecosystem grows.
