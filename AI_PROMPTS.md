@@ -13,21 +13,21 @@ Pixel Journey development benefits enormously from specialized AI agents that de
 ## Quick Start
 
 1. Go to the `ai-prompts/` folder.
-2. Open the `.md` file for the specialization you need.
-3. Copy the entire content.
-4. Paste it as the system prompt (or initial context) in your AI tool (Grok, Claude, Cursor, etc.).
-5. Optionally add current project-specific context on top (or a pre-filled knowledge bank).
+2. Open the desired persona `.md` file.
+3. Optionally include a knowledge bank from `ai-prompts/knowledge-banks/`.
+4. Paste as the system prompt in your AI tool.
+5. Add current project context if needed.
 6. The agent will now operate with deep alignment to Px standards and patterns.
 
 ## How to Combine Prompts + Knowledge Banks
 
-You can combine multiple prompt templates and optionally attach a knowledge bank for complex tasks. Examples:
+You can combine multiple prompt templates and optionally attach a knowledge bank. Examples:
 
 - **Core Architect + Game Systems Designer** + Game Systems knowledge bank — Planning a new Hot or Not feature.
 - **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback.
 - **Educational Support Bot** + relevant knowledge bank — Helping new contributors learn the ecosystem.
 
-See `ai-prompts/knowledge-bank-example.md` for an example structure.
+See `ai-prompts/knowledge-banks/example.md` for an example structure.
 
 ## Available Specializations
 
@@ -53,7 +53,7 @@ See `ai-prompts/knowledge-bank-example.md` for an example structure.
 | `marketing-content-creator.md`     | Marketing, X content, educational threads, release notes | Announcements, community content, explainers      |
 | `educational-support-bot.md`       | Onboarding help, explaining concepts, getting unstuck | New contributors, learning the ecosystem          |
 
-New specializations and knowledge bank examples can be added as the ecosystem grows.
+New specializations and knowledge banks can be added as the ecosystem grows.
 
 ## Quality Bar for New Prompts
 
@@ -63,4 +63,4 @@ Any new AI prompt template added to this repo must:
 - Emphasize educational output quality
 - Be modular and composable where possible
 
-See the `ai-prompts/` folder for the actual prompt files and the knowledge bank example.
+See the `ai-prompts/` folder for the actual prompt files and knowledge banks.
