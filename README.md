@@ -71,8 +71,11 @@ We heavily use specialized AI agents. This repo includes high-quality prompt tem
 - `pxpackages-specialist.md` — Monorepo structure, shared packages (@pxjourney/*), reusability
 - `educational-documenter.md` — High-quality layered documentation
 - `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
+- `critical-feedback-tester.md` — Rigorous qualitative feedback and testing
+- `marketing-content-creator.md` — Marketing, X content, educational threads, release notes
+- `educational-support-bot.md` — Onboarding help, explaining concepts, getting unstuck
 
-See `AI_PROMPTS.md` for usage instructions and how to create new specializations.
+See `AI_PROMPTS.md` for usage instructions, how to combine prompts, and the knowledge bank example.
 
 ---
 
