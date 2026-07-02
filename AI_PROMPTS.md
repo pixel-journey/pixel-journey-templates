@@ -2,7 +2,7 @@
 
 **Specialized Prompt Templates for AI-Assisted Pixel Journey Development**
 
-This document introduces reusable, high-quality prompt templates for creating specialized AI agents focused on different domains of Px, WAX, and Web3 development — including development, design, documentation, feedback, and more.
+This document introduces reusable, high-quality prompt templates for creating specialized AI agents focused on different domains of Px, WAX, and Web3 development — including development, design, documentation, feedback, marketing/content, and more.
 
 These templates help us (and future contributors) spin up consistent, aligned AI collaborators quickly.
 
@@ -28,6 +28,7 @@ You can (and often should) combine multiple prompt templates for complex tasks. 
 - **WAX Client-Specialist + Educational Documenter** — Building a data-heavy feature and documenting it well.
 - **Design System Integrator + Educational Documenter** — Creating new UI components with excellent documentation.
 - **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback on work in progress.
+- **Marketing Content Creator + Core Architect** — Creating announcements or educational content about new architecture/features.
 
 ## Available Specializations
 
@@ -47,7 +48,12 @@ You can (and often should) combine multiple prompt templates for complex tasks. 
 | `educational-documenter.md`        | High-quality layered documentation                  | READMEs, guides, pattern documentation, onboarding |
 | `critical-feedback-tester.md`      | Rigorous qualitative feedback and testing           | Code reviews, UI/UX feedback, documentation review |
 
-New specializations can be added as the ecosystem grows (marketing/content personas, educational support bots, knowledge-bank templates, etc.).
+### Content & Community
+| Prompt File                        | Focus Area                                          | Recommended Use Cases                              |
+|------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+| `marketing-content-creator.md`     | Marketing, X content, educational threads, release notes | Announcements, community content, explainers      |
+
+New specializations can be added as the ecosystem grows (educational support bots, knowledge-bank templates, etc.).
 
 ## Quality Bar for New Prompts
 
