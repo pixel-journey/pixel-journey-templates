@@ -4,6 +4,8 @@
 
 Use this alongside `px-core-architect.md`, `educational-support-bot.md`, or any persona when you need context on how we typically work.
 
+See `EDUCATIONAL-QUALITY-STANDARD.md` and `PATTERNS.md` for quality and implementation guidance.
+
 ## Typical Development Flow
 
 1. **Understand the problem** — Read relevant handbook sections (`STANDARDS.md`, `PATTERNS.md`, `EDUCATIONAL-QUALITY-STANDARD.md`)
