@@ -17,7 +17,8 @@ ai-prompts/
 ├── knowledge-banks/
 │   ├── example.md
 │   ├── wallet-security.md
-│   └── design-system.md
+│   ├── design-system.md
+│   └── educational-support.md
 └── README.md
 ```
 
@@ -51,6 +52,7 @@ ai-prompts/
 - `knowledge-banks/example.md` — General / Game Systems example
 - `knowledge-banks/wallet-security.md` — Wallet security & self-custody
 - `knowledge-banks/design-system.md` — Design system integration & pixel UI
+- `knowledge-banks/educational-support.md` — Educational support & onboarding
 
 ## Contributing New Templates
 
