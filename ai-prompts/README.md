@@ -11,10 +11,12 @@ We also support pairing personas with pre-filled knowledge banks for even higher
 ```
 ai-prompts/
 ├── personas/
-│   ├── development-architecture/     # Core architect, WAX client, game systems, wallet, packages
-│   ├── design-documentation-feedback/ # Design system, documentation, critical feedback
-│   └── content-community-education/   # Marketing/content, educational support
-├── knowledge-banks/                  # Pre-filled knowledge banks (pair with personas)
+│   ├── development-architecture/
+│   ├── design-documentation-feedback/
+│   └── content-community-education/
+├── knowledge-banks/
+│   ├── example.md                 # General / Game Systems example
+│   └── wallet-security.md         # Wallet security & self-custody
 └── README.md
 ```
 
@@ -25,7 +27,7 @@ ai-prompts/
 3. Optionally include a knowledge bank from `knowledge-banks/`.
 4. Copy the content and use it as the system prompt.
 
-## Current Personas (Being Migrated to Categorized Structure)
+## Available Personas
 
 ### Development & Architecture
 - `px-core-architect.md`
@@ -45,11 +47,12 @@ ai-prompts/
 
 ## Knowledge Banks
 
-See `knowledge-banks/example.md` for a pre-filled knowledge bank example.
+- `knowledge-banks/example.md` — General example (Game Systems focused)
+- `knowledge-banks/wallet-security.md` — Wallet security & self-custody focused
 
 ## Contributing New Templates
 
-We welcome expansion into new domains. When adding one:
+We welcome expansion into new domains and knowledge banks. When adding one:
 - Follow the existing style and quality bar
 - Update `AI_PROMPTS.md` and this file
 - Reference the 7 Foundational Principles and relevant handbook sections
