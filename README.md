@@ -10,9 +10,17 @@
 **This repo contains the instructions, standards, pattern overviews, expected shapes, and AI collaboration templates** that all other repos in the `pixel-journey` organization follow (or are actively aligning to).
 
 It works alongside:
-- `pixel-journey-design-system`
-- `pixel-journey-standards`
+- `pixel-journey-design-system` — The visual language, tokens, components, and detailed style guide
+- `pixel-journey-standards` — Foundational engineering rules and Web3 best practices
 - All individual Px repos (PxWallet, Hot or Not, PxPackages, docs, etc.)
+
+---
+
+## Relationship with Related Repos
+
+- **`pixel-journey-design-system`**: Contains the detailed visual language, design tokens, component specifications, and style guide. This handbook references it heavily (especially in UI-related patterns and the `design-system-integrator.md` prompt) but does not duplicate its content.
+- **`pixel-journey-standards`**: Contains foundational engineering and Web3 rules. This handbook builds on top of it with Px-specific enforcement, patterns, and educational guidance.
+- **Individual Px Repos** (PxWallet, Hot or Not, etc.): These are the living implementations. We extract generalizable patterns and principles from them into this handbook, but we do not create project-specific deep summaries here.
 
 ---
 
@@ -59,6 +67,8 @@ We heavily use specialized AI agents. This repo includes high-quality prompt tem
 - `px-core-architect.md` — Overall Px architecture, principles, patterns, roadmap
 - `wax-client-specialist.md` — WAX client-side (AtomicAssets, Hyperion, pagination, caching, GitOps)
 - `game-systems-designer.md` — Verifiable mechanics, on-chain entropy, Hot or Not, leaderboards, XP
+- `wallet-security-engineer.md` — Encrypted vaults, key derivation, signing UX, self-custody
+- `pxpackages-specialist.md` — Monorepo structure, shared packages (@pxjourney/*), reusability
 - `educational-documenter.md` — High-quality layered documentation
 - `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
 
