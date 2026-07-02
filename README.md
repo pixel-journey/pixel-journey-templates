@@ -30,6 +30,19 @@ This handbook is the answer.
 
 ---
 
+## What You Will Find Here
+
+| Section                  | Purpose                                                                 | Best For |
+|--------------------------|-------------------------------------------------------------------------|----------|
+| **STANDARDS.md**         | The rules, checklists, and expected shapes for Px work                 | Contributors, maintainers, AI agents |
+| **PATTERNS.md**          | Overviews + requirements of recommended implementation approaches      | Feature development, consistency reviews |
+| **ECOSYSTEM.md**         | Map of all major Px repos, how they relate, and their current maturity | Onboarding, planning, discovering where to contribute |
+| **CONTRIBUTING.md**      | How to contribute to this handbook and the wider ecosystem             | New and returning contributors |
+| **docs/**                | Deeper educational guides (WAX client-side patterns, on-chain entropy, etc.) | Learning the "Px way" deeply |
+| **.github/**             | Org-wide issue, PR, workflow, and repo templates                       | New repos and contribution hygiene |
+
+---
+
 ## Foundational Principles (Non-Negotiable)
 
 Every project, package, and contribution in the Pixel Journey org is expected to embody these:
@@ -46,25 +59,13 @@ These principles are not suggestions. They are the foundation that makes the ent
 
 ---
 
-## What You Will Find Here
-
-| Section                  | Purpose                                                                 | Best For |
-|--------------------------|-------------------------------------------------------------------------|----------|
-| **Standards**            | The rules, checklists, and expected shapes for Px work                 | Contributors, maintainers, AI agents |
-| **Patterns**             | Overviews + requirements of recommended implementation approaches      | Feature development, consistency reviews |
-| **Ecosystem Overview**   | Map of all major Px repos, how they relate, and their current maturity | Onboarding, planning, discovering where to contribute |
-| **Guides**               | Deeper educational content on WAX client-side patterns, on-chain entropy, design integration, etc. | Learning the "Px way" deeply |
-| **GitHub Templates**     | Org-wide issue, PR, workflow, and repo templates                       | New repos and contribution hygiene |
-
----
-
 ## How to Use This Handbook
 
-- **New to Px?** Start with the Ecosystem Overview + Foundational Principles.
-- **Building a feature?** Check the relevant Pattern overview first.
-- **Starting a new repo or package?** Follow the Standards + expected shape.
-- **Reviewing code?** Use the checklists in Standards.
-- **Contributing improvements?** All changes here should increase clarity, consistency, or educational value for the whole org.
+- **New to Px?** Start with `ECOSYSTEM.md` + Foundational Principles.
+- **Building a feature?** Check the relevant section in `PATTERNS.md` first.
+- **Starting a new repo or package?** Follow `STANDARDS.md` + expected shape.
+- **Reviewing code or PRs?** Use the checklists in `STANDARDS.md`.
+- **Want to contribute?** See `CONTRIBUTING.md`.
 
 ---
 
@@ -81,13 +82,13 @@ This approach keeps the handbook focused, maintainable, and authoritative.
 ## Next Steps for This Repo
 
 This handbook is a living document. As the ecosystem matures, we will:
-- Expand pattern overviews with clearer decision matrices
-- Add more ecosystem mapping as new repos and packages emerge
-- Refine standards based on real-world usage in PxWallet, Hot or Not, PxPackages, etc.
+- Expand `PATTERNS.md` with additional high-value patterns
+- Add more educational guides under `docs/`
+- Refine standards and ecosystem mapping based on real usage in PxWallet, Hot or Not, PxPackages, etc.
 - Keep documentation quality at the highest level (layered, scannable, educational)
 
 ---
 
-**Built for the long-term health and velocity of the Pixel Journey ecosystem.**
+**Built for the long-term health, consistency, and velocity of the Pixel Journey ecosystem.**
 
 *PxWallet • Px Hot or Not • Pixal PFPs • YEET • PxPackages • GitBook Knowledge Bank*
