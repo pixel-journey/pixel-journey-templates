@@ -8,7 +8,7 @@ These templates help us (and future contributors) spin up consistent, aligned AI
 
 ## Philosophy
 
-Pixel Journey development benefits enormously from specialized AI agents that deeply understand our principles, patterns, codebase style, and educational standards. Rather than using generic models for every task, we maintain a library of focused prompt templates across multiple skill domains.
+Pixel Journey development benefits enormously from specialized AI agents that deeply understand our principles, patterns, codebase style, and educational standards. Rather than using generic models for every task, we maintain a library of focused prompt templates across multiple skill domains. We also support pairing these personas with pre-filled knowledge banks for even higher quality and consistency.
 
 ## Quick Start
 
@@ -16,20 +16,18 @@ Pixel Journey development benefits enormously from specialized AI agents that de
 2. Open the `.md` file for the specialization you need.
 3. Copy the entire content.
 4. Paste it as the system prompt (or initial context) in your AI tool (Grok, Claude, Cursor, etc.).
-5. Optionally add current project-specific context on top.
+5. Optionally add current project-specific context on top (or a pre-filled knowledge bank).
 6. The agent will now operate with deep alignment to Px standards and patterns.
 
-## How to Combine Prompts
+## How to Combine Prompts + Knowledge Banks
 
-You can (and often should) combine multiple prompt templates for complex tasks. Here are some effective combinations:
+You can combine multiple prompt templates and optionally attach a knowledge bank for complex tasks. Examples:
 
-- **Core Architect + Game Systems Designer** — Planning a new Hot or Not feature or mini-game.
-- **Core Architect + Wallet Security Engineer** — Designing new PxWallet features.
-- **WAX Client-Specialist + Educational Documenter** — Building a data-heavy feature and documenting it well.
-- **Design System Integrator + Educational Documenter** — Creating new UI components with excellent documentation.
-- **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback on work in progress.
-- **Marketing Content Creator + Core Architect** — Creating announcements or educational content about new architecture/features.
-- **Educational Support Bot + any other prompt** — Getting help understanding concepts or getting unstuck.
+- **Core Architect + Game Systems Designer** + Game Systems knowledge bank — Planning a new Hot or Not feature.
+- **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback.
+- **Educational Support Bot** + relevant knowledge bank — Helping new contributors learn the ecosystem.
+
+See `ai-prompts/knowledge-bank-example.md` for an example structure.
 
 ## Available Specializations
 
@@ -55,7 +53,7 @@ You can (and often should) combine multiple prompt templates for complex tasks. 
 | `marketing-content-creator.md`     | Marketing, X content, educational threads, release notes | Announcements, community content, explainers      |
 | `educational-support-bot.md`       | Onboarding help, explaining concepts, getting unstuck | New contributors, learning the ecosystem          |
 
-New specializations can be added as the ecosystem grows (knowledge-bank templates, etc.).
+New specializations and knowledge bank examples can be added as the ecosystem grows.
 
 ## Quality Bar for New Prompts
 
@@ -65,4 +63,4 @@ Any new AI prompt template added to this repo must:
 - Emphasize educational output quality
 - Be modular and composable where possible
 
-See the `ai-prompts/` folder for the actual prompt files.
+See the `ai-prompts/` folder for the actual prompt files and the knowledge bank example.
