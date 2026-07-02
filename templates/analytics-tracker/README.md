@@ -1,78 +1,28 @@
 # analytics-tracker/
 
-**Generalized WAX AtomicAssets Collection Tracker + Weighted Rarity + Surviving Mint Rank Engine (GitOps Serverless)**
+**Advanced Reference: Generalized WAX Collection Tracker + Rarity Engine Patterns (GitOps)**
 
-> **This is the GOLD STANDARD reference template.** Ported and generalized from the complete, excellent gkniftyheads-tracker implementation (full source provided by Pixel Journey team). It will become the canonical pattern for any Px analytics, leaderboards, trait exposure, or on-chain data visualization tool.
+> **Future / Advanced Reference Only** — This folder exists as a high-quality documentation and pattern showcase. We are **not** prioritizing a full port of the gkniftyheads-tracker right now. Instead, we extract reusable patterns (cursor pagination, delta sync logic, client-side rarity/leaderboard calculation, surviving mint rank, trait exposure) into the more fundamental **Feature Pattern Templates** and **Design & UI Templates** categories.
 
-## Why This Template Exists
+The excellent educational style and file-by-file architecture handbook from the gkniftyheads-tracker source you shared remains our **documentation quality benchmark** for everything we build in this repo.
 
-Public dashboards for Pixal PFPs, YEET holders, Hot or Not XP, PxTicker grids, or any future collection need:
-- Live surviving supply & burn rates
-- Surviving mint ranks (re-ranked after burns using original `template_mint`)
-- Weighted rarity scoring (template supply + mint bonuses + rarity name + variation multipliers)
-- Live trait exposure % (rarity traits vs variation traits)
-- Holder & rarity leaderboards
-- **Zero ongoing server cost** via GitHub Actions + static JSON + CDN
-- Full Git history of every supply/rarity change (transparent & auditable)
+## When This Might Become Active
 
-All of this is achieved with **pure client-side + public WAX infra** (AtomicAssets API + Hyperion where needed).
+Only if/when a specific Px feature (e.g. advanced Pixal PFP trait explorer, Hot or Not historical leaderboards, or holder analytics dashboard) would be dramatically accelerated by having a ready-to-fork GitOps rarity + leaderboard engine. At that point we can revive and generalize it under the Feature Patterns or a dedicated advanced example.
 
-## Quick Start (Demo Mode)
+For now, the focus is on **design templates** and **core feature patterns** that give the fastest consistency wins across PxWallet, Hot or Not, PxTicker, and new community contributions.
 
-```bash
-cd templates/analytics-tracker
-# Use provided sample data first
-npm run demo          # opens beautiful dashboard with mock survivors
+## Key Patterns We May Extract Later (Educational Value)
 
-# For real collection (after removing demoLimit in config)
-npm run hydrate       # one-time full download (cursor pagination)
-npm run calculate     # weighted rarity + ranks + exposure
-# Then open demo/index.html or deploy demo/
-```
+- Cursor-based hydration with `lower_bound`
+- Delta sync for mints + burns
+- Client-side only weighted rarity + surviving_mint_rank calculation
+- Split trait exposure (rarity vs variation)
+- Beautiful, self-contained demo dashboard pattern
+- Zero-cost GitHub Actions + static JSON + CDN delivery
 
-## Core Features (All Educational)
+These patterns can inform smaller, more focused templates in `feature-patterns/` (e.g. a "Leaderboard with surviving ranks UI + logic shell" or "Trait exposure visualization component").
 
-- **Config-driven everything** (`config.json`): collection name, batch sizes, rarity weights, API nodes, demo limit, gzip
-- **Cursor pagination hydrate** (best practice for 100k–500k assets)
-- **Daily delta sync** (new mints + burns only — cheap & fast)
-- **Rarity Calculation Engine**:
-  - Only processes surviving (non-burned + has owner) assets
-  - Surviving Mint Rank within template (sorted by original `template_mint`)
-  - Weighted score = statistical base + template supply weight + mint number bonuses + legendary/1/1 multipliers + variation multiplier
-- **Split Trait Exposure** (rarity_traits vs variation_traits with live % of current survivors)
-- **Two Leaderboards**: Holder (top by weighted rarity sum) + Rarity (top N with original mint #, surviving rank, scores)
-- **Self-updating GitHub Action** (`.github/workflows/daily-sync.yml`)
-- **Stunning single-file demo** (Tailwind + modals + search + keyboard shortcuts + tabs)
+## Current Status
 
-## File-by-File Architecture (Educational Heart)
-
-See the original gkniftyheads-tracker `README.md` (included in full context) for the complete handbook. This template will maintain that level of clarity:
-
-- `config.json` — Single control panel
-- `scripts/hydrate.js` — Cursor-based bulk ingest (educational comments on pagination, rate limits, template extraction)
-- `scripts/delta-sync.js` — Incremental mint/burn logic (placeholder → full impl in port)
-- `scripts/calculate-rarity.js` — The brain (trait frequency, grouping by template, rank assignment, full weighted formula — all tunable)
-- `data/` — All generated JSONs (manifest, templates, schemas/<collection>.json, template_stats, trait_exposure, leaderboard)
-- `demo/index.html` — Self-contained interactive dashboard (dynamic JSON loader, asset modal with original mint + surviving rank + weighted score)
-- `.github/workflows/daily-sync.yml` — Zero-cost nightly automation
-
-## Px-Specific Customization (Planned in Port)
-
-- Default to a Pixal PFP collection example (or mock data styled as Pixal tiers: Holder/Stacker/Whale/Kraken)
-- Easy toggle between "demo mode" (instant) and "live WAX mode"
-- Integration hooks for Px design tokens (glassmorphic + neon + CRT optional)
-- Exportable components for embedding leaderboards into Px Hot or Not or PxWallet "Community" tab
-
-## WAX Best Practices Embedded
-
-- Cursor pagination with `lower_bound`
-- Multiple public Atomic API nodes with fallback
-- `template_mint` preservation for surviving rank feature
-- Only survivors counted in all rankings/exposure (burned assets filtered)
-- Full reference to https://onblock.dev/working-with-the-atomic-api
-
-## Status in Master Plan
-
-**Phase 2 Priority**. Full port of the provided gkniftyheads-tracker source will happen in the next slice of this conversation. It will be generalized, Px-branded, and kept at the same (or higher) educational standard.
-
-Once complete, this single template will accelerate *every* future Px data-heavy feature.
+**On hold / Reference only**. The folder and this README are kept for context and future use. The real work is happening in `design-ui/` and `feature-patterns/` to deliver immediate value for consistent Px development speed.
