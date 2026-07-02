@@ -1,33 +1,32 @@
 # AI_PROMPTS.md
 
-**Specialized Prompt Templates for AI-Assisted Pixel Journey Development**
+**Specialized Prompt Templates (Personas) for AI-Assisted Pixel Journey Development**
 
-This document introduces reusable, high-quality prompt templates for creating specialized AI agents focused on different domains of Px, WAX, and Web3 development — including development, design, documentation, feedback, marketing/content, education, and more.
+This document introduces reusable, high-quality prompt templates for creating specialized AI agents focused on different domains of Px, WAX, and Web3 development.
 
-These templates help us (and future contributors) spin up consistent, aligned AI collaborators quickly.
+These templates help us spin up consistent, aligned AI collaborators quickly. We also support pairing personas with pre-filled knowledge banks for even higher quality and consistency.
 
-## Philosophy
+## Recommended Structure
 
-Pixel Journey development benefits enormously from specialized AI agents that deeply understand our principles, patterns, codebase style, and educational standards. Rather than using generic models for every task, we maintain a library of focused prompt templates across multiple skill domains. We also support pairing these personas with pre-filled knowledge banks for even higher quality and consistency.
+Personas are organized under `ai-prompts/personas/` in categorized subfolders:
+- `development-architecture/`
+- `design-documentation-feedback/`
+- `content-community-education/`
+
+Knowledge banks live in `ai-prompts/knowledge-banks/`.
 
 ## Quick Start
 
-1. Go to the `ai-prompts/` folder.
-2. Open the desired persona `.md` file.
-3. Optionally include a knowledge bank from `ai-prompts/knowledge-banks/`.
-4. Paste as the system prompt in your AI tool.
-5. Add current project context if needed.
-6. The agent will now operate with deep alignment to Px standards and patterns.
+1. Go to `ai-prompts/personas/<category>/` and open the desired persona.
+2. Optionally include a knowledge bank from `knowledge-banks/`.
+3. Paste as the system prompt in your AI tool.
+4. Add current project context if needed.
 
 ## How to Combine Prompts + Knowledge Banks
 
-You can combine multiple prompt templates and optionally attach a knowledge bank. Examples:
+You can combine multiple personas and attach knowledge banks. Examples are listed in the sections below.
 
-- **Core Architect + Game Systems Designer** + Game Systems knowledge bank — Planning a new Hot or Not feature.
-- **Critical Feedback Tester + any development prompt** — Getting rigorous qualitative feedback.
-- **Educational Support Bot** + relevant knowledge bank — Helping new contributors learn the ecosystem.
-
-See `ai-prompts/knowledge-banks/example.md` for an example structure.
+See `ai-prompts/knowledge-banks/example.md` for a knowledge bank structure example.
 
 ## Available Specializations
 
@@ -63,4 +62,4 @@ Any new AI prompt template added to this repo must:
 - Emphasize educational output quality
 - Be modular and composable where possible
 
-See the `ai-prompts/` folder for the actual prompt files and knowledge banks.
+See `ai-prompts/README.md` for the recommended folder structure.
