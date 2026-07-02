@@ -6,8 +6,9 @@ This folder contains deeper, focused guides on important technical and architect
 
 ## Current Guides
 
-- `WAX_CLIENT_SIDE_PATTERNS.md` — How we build reliable experiences using only public WAX infrastructure (cursor pagination, delta sync, client-side calculations).
-- `ONCHAIN_ENTROPY_GUIDE.md` — The verifiable randomness pattern that powers fair, trustless game mechanics without oracles or RAM cost.
+- `GETTING_STARTED.md` — Practical onboarding guide for new humans and AI agents (recommended starting point).
+- `WAX_CLIENT_SIDE_PATTERNS.md` — How we build reliable experiences using only public WAX infrastructure.
+- `ONCHAIN_ENTROPY_GUIDE.md` — The verifiable randomness pattern that powers fair, trustless game mechanics.
 
 ## Purpose
 
