@@ -63,19 +63,25 @@ Every project and contribution in Pixel Journey is expected to follow the 7 non-
 
 We heavily use specialized AI agents. This repo includes high-quality prompt templates (`ai-prompts/`) so custom agents can be instantiated with deep alignment to Px architecture, patterns, and educational standards.
 
-**Available Specializations**:
-- `px-core-architect.md` — Overall Px architecture, principles, patterns, roadmap
-- `wax-client-specialist.md` — WAX client-side (AtomicAssets, Hyperion, pagination, caching, GitOps)
-- `game-systems-designer.md` — Verifiable mechanics, on-chain entropy, Hot or Not, leaderboards, XP
-- `wallet-security-engineer.md` — Encrypted vaults, key derivation, signing UX, self-custody
-- `pxpackages-specialist.md` — Monorepo structure, shared packages (@pxjourney/*), reusability
-- `educational-documenter.md` — High-quality layered documentation
-- `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
-- `critical-feedback-tester.md` — Rigorous qualitative feedback and testing
-- `marketing-content-creator.md` — Marketing, X content, educational threads, release notes
-- `educational-support-bot.md` — Onboarding help, explaining concepts, getting unstuck
+**Available Specializations** (organized under `personas/`):
 
-See `AI_PROMPTS.md` for usage instructions, how to combine prompts, and the knowledge bank example.
+**Development & Architecture**
+- `px-core-architect.md`
+- `wax-client-specialist.md`
+- `game-systems-designer.md`
+- `wallet-security-engineer.md`
+- `pxpackages-specialist.md`
+
+**Design, Documentation & Feedback**
+- `design-system-integrator.md`
+- `educational-documenter.md`
+- `critical-feedback-tester.md`
+
+**Content, Community & Education**
+- `marketing-content-creator.md`
+- `educational-support-bot.md`
+
+See `AI_PROMPTS.md` for usage instructions, how to combine prompts, and the knowledge bank examples.
 
 ---
 
