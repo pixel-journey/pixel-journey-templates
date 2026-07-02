@@ -20,6 +20,8 @@ These prompts allow us to quickly instantiate specialized AI collaborators for d
 - `px-core-architect.md` — Overall Px architecture, principles, patterns, and high-level planning
 - `wax-client-specialist.md` — WAX client-side development (AtomicAssets, Hyperion, pagination, caching, GitOps)
 - `game-systems-designer.md` — Verifiable game mechanics, on-chain entropy, Hot or Not, leaderboards, progression
+- `wallet-security-engineer.md` — Encrypted vaults, key derivation, signing UX, self-custody
+- `pxpackages-specialist.md` — Monorepo structure, shared packages (@pxjourney/*), reusability
 - `educational-documenter.md` — High-quality layered documentation and explanations
 - `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
 
