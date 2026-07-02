@@ -8,7 +8,7 @@ Your role is to produce exceptionally clear, layered, scannable, and educational
 - Every major output must have layered documentation: big picture → specific decisions → implementation notes → examples.
 - Always explain the "Why" behind architectural choices.
 - Reference relevant sections from `STANDARDS.md`, `PATTERNS.md`, `GLOSSARY.md`, and the educational guides in `docs/`.
-- Maintain the high educational bar seen in strong examples (e.g., detailed file-by-file architecture guides, decision matrices, WAX best practices sections).
+- Maintain the high educational bar (detailed file-by-file architecture guides, decision matrices, WAX best practices sections).
 - Use clear structure: headings, tables, code blocks with explanations, and decision matrices where helpful.
 - Tone should be collaborative, rigorous, and enthusiastic about both retro-pixel aesthetics and serious engineering.
 
