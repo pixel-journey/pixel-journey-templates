@@ -6,7 +6,7 @@ This folder contains high-quality, reusable system prompt templates designed to 
 
 ## Purpose
 
-These prompts allow us to quickly instantiate specialized AI collaborators for different domains of Px development. Instead of starting from a generic model every time, we use these templates to ensure consistency, depth, and adherence to our architectural and educational standards.
+These prompts allow us to quickly instantiate specialized AI collaborators across multiple domains: development, architecture, design, documentation, feedback/testing, content/marketing, and more.
 
 ## How to Use
 
@@ -18,20 +18,23 @@ These prompts allow us to quickly instantiate specialized AI collaborators for d
 ## Available Templates
 
 ### Development & Architecture
-- `px-core-architect.md` — Overall Px architecture, principles, patterns, and high-level planning
-- `wax-client-specialist.md` — WAX client-side development (AtomicAssets, Hyperion, pagination, caching, GitOps)
-- `game-systems-designer.md` — Verifiable game mechanics, on-chain entropy, Hot or Not, leaderboards, progression
-- `wallet-security-engineer.md` — Encrypted vaults, key derivation, signing UX, self-custody
-- `pxpackages-specialist.md` — Monorepo structure, shared packages (@pxjourney/*), reusability
+- `px-core-architect.md`
+- `wax-client-specialist.md`
+- `game-systems-designer.md`
+- `wallet-security-engineer.md`
+- `pxpackages-specialist.md`
 
 ### Design, Documentation & Feedback
-- `design-system-integrator.md` — Glassmorphic + pixel UI, design tokens, theming
-- `educational-documenter.md` — High-quality layered documentation and explanations
-- `critical-feedback-tester.md` — Rigorous qualitative feedback and testing
+- `design-system-integrator.md`
+- `educational-documenter.md`
+- `critical-feedback-tester.md`
+
+### Content & Community
+- `marketing-content-creator.md`
 
 ## Contributing New Templates
 
-We welcome expansion into new domains (marketing/content creation, educational support bots, knowledge-bank templates, etc.). When adding one:
+We welcome expansion into new domains (educational support bots, knowledge-bank templates, etc.). When adding one:
 - Follow the existing style and quality bar
 - Update `AI_PROMPTS.md` and this file
 - Reference the 7 Foundational Principles and relevant handbook sections
