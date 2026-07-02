@@ -2,18 +2,24 @@
 
 **Specialized Prompt Templates for AI-Assisted Pixel Journey Development**
 
-This folder contains high-quality, reusable system prompt templates designed to create focused AI agents aligned with Pixel Journey principles, patterns, and standards.
+This folder contains high-quality, reusable system prompt templates (personas) designed to create focused AI agents aligned with Pixel Journey principles, patterns, and standards.
 
 We also support pairing personas with pre-filled knowledge banks for even higher consistency and quality.
 
+## Folder Structure
+
+- `personas/` — (Future) Categorized AI personas
+- `knowledge-banks/` — Pre-filled knowledge banks to pair with personas
+- Individual persona `.md` files (current flat structure)
+
 ## How to Use
 
-1. Open the desired `.md` file (persona).
-2. Optionally include a knowledge bank (see `knowledge-bank-example.md`).
+1. Open the desired persona `.md` file.
+2. Optionally include a knowledge bank from `knowledge-banks/`.
 3. Copy the content and paste it as the system prompt in your AI tool.
 4. Add current project context if needed.
 
-## Available Templates
+## Available Personas
 
 ### Development & Architecture
 - `px-core-architect.md`
@@ -33,7 +39,11 @@ We also support pairing personas with pre-filled knowledge banks for even higher
 
 ## Knowledge Banks
 
-See `knowledge-bank-example.md` for an example of how to structure a pre-filled knowledge bank that can be paired with any persona.
+See `knowledge-banks/example.md` for an example of how to structure a pre-filled knowledge bank.
+
+## Future Structure Improvements
+
+We may further improve the folder architecture (e.g., moving personas into categorized subfolders) as the library grows.
 
 ## Contributing New Templates
 
