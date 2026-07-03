@@ -10,6 +10,20 @@ This folder is a core part of the `pixel-journey-templates` handbook and directl
 
 ---
 
+## Important Distinction: Px Templates vs `wax-*` Educational Blueprints
+
+**This templates repository is primarily for Px-internal development patterns** (tight design system alignment, shared components, production PxPortals work).
+
+For the public **WAX Blueprint Catalog** (`wax-*` repos):
+
+- Follow the rules in [pixel-journey-standards/standards/REPO_TYPES_AND_STYLING_GUIDELINES.md](https://github.com/pixel-journey/pixel-journey-standards/blob/main/standards/REPO_TYPES_AND_STYLING_GUIDELINES.md)
+- Use **plain Tailwind CSS only** (no Px classes)
+- Optimize for maximum educational clarity, accessibility, and copy-paste value for the broader WAX community
+
+This separation keeps community blueprints welcoming and timeless while allowing internal Px work to use the full design system.
+
+---
+
 ## Vision & Philosophy
 
 We believe the fastest way to high-quality, consistent Px development is to **solve common problems once** — beautifully, educationally, and reusably — so that every new feature, mini-dApp, or package starts from a strong, aligned foundation instead of from zero.
@@ -43,6 +57,36 @@ These templates are not just starters — they are **living references** that em
 - Verify every new or updated template has a deep, scannable README with usage, architecture decisions, Px alignment, and educational notes
 - Ensure no duplication with `pixel-journey-design-system`
 - Confirm the template generalizes patterns from real Px work
+
+---
+
+## Recommended Starter for `wax-*` Educational Blueprints
+
+For most new public `wax-*` visualizers, simulators, analyzers, or tool repos (not full Next.js dApps):
+
+**Use this minimal, education-first baseline** (Tailwind via CDN for instant clarity):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Blueprint Name] — WAX Educational Blueprint</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> /* optional small custom styles for retro-pixel feel */ </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <!-- Your content here -->
+</body>
+</html>
+```
+
+**README language to use** (copy and adapt):
+
+> This is a clean, educational reference implementation demonstrating [specific pattern] using public WAX primitives (AtomicAssets / Hyperion / Alcor / WharfKit). Styled with vanilla Tailwind for maximum accessibility and clarity for the broader WAX developer community.
+
+See the full guidelines in `pixel-journey-standards`.
 
 ---
 
